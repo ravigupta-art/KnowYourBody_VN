@@ -1,31 +1,19 @@
 const RenJSConfig =  {
-  'name': 'Quickstart',
-  'w': 800,
-  'h': 600,
-  'renderer': Phaser.AUTO, // become renderer
-  'scaleMode': Phaser.ScaleManager.SHOW_ALL,
-  'loadingScreen': {
-    'background': 'assets/gui/loaderloaderbackground.png',
-    'loadingBar': {
-      'asset': 'assets/gui/loaderloading-bar.png',
-      'position': {
-        'x': 109,
-        'y': 458
-      },
-      'size': {
-        'w': 578,
-        'h': 82
-      }
-    }
-  },
-  'fonts': 'assets/gui/fonts.css',
+  'w': 1920,
+  'h': 1080,
+  'debugMode': true,
   'guiConfig': 'story/GUI.yaml',
-  storyConfig: 'story/Config.yaml',
-  storySetup: 'story/Setup.yaml',
+  'storySetup': 'story/Setup.yaml',
+  'storyConfig': 'story/Config.yaml',
   'storyText': [
     'story/Story.yaml'
   ],
-  'logChoices': true,
+  'name': "ThatMate_GUI_01",
+  'renderer': Phaser.AUTO, // become renderer
+  'scaleMode': Phaser.ScaleManager.SHOW_ALL,
+  'loadingScreen': {},
+  'fonts': 'assets/gui/fonts.css',
+  'logChoices': true
 }
 
 const RenJSGame = new RenJS.game(RenJSConfig)

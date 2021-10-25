@@ -3,20 +3,33 @@ backgrounds:
   room: assets/backgrounds/room_day.jpg
   room_night: assets/backgrounds/room_night.jpg
   room_night_light: assets/backgrounds/room_night_light.jpg
+  school_afternoon: assets/backgrounds/school_front_afternoon.jpg
 
 characters:
   deuzi:
     displayName: Deuzilene
-    speechColour: "#ca90cf"
+    speechColour: "#243C2C"
     looks:
-      normal: assets/characters/Char3NormalSchool.png
-      happy: assets/characters/Char3HappySchool.png
-      angry: assets/characters/Char3AngrySchool.png
+      normal: assets/characters/Char3Normal.png
+      normal_school: assets/characters/Char3NormalSchool.png
+      happy: assets/characters/Char3Happy.png
+      happy_school: assets/characters/Char3HappySchool.png
+      angry: assets/characters/Char3Angry.png
+      angry_school: assets/characters/Char3AngrySchool.png
+  krish:
+    displayName: Krishnan Iyer
+    looks:
+      normal: assets/characters/Char4Normal.png
+      normal_school: assets/characters/Char4NormalSchool.png
+      happy: assets/characters/Char4Happy.png
+      happy_school: assets/characters/Char4HappySchool.png
+      angry: assets/characters/Char4Angry.png
+      angry_school: assets/characters/Char4AngrySchool.png
 
 cgs:
   phone1: assets/objects/phone1.png
   phone2: assets/objects/phone2.png
-
+  horse: assets/objects/horse.png
 music:
   rollingCredits: assets/audio/Evan_Schaeffer_-_01_-_Aqueduct.mp3
   morningBGM: assets/audio/Evan_Schaeffer_-_03_-_Glow.mp3

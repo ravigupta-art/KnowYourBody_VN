@@ -1,9 +1,11 @@
 start:
   - play morningBGM:
-  - show room: WITH FADE CONTINUE
+  - show school_afternoon: WITH FUSION CONTINUE
   - show deuzi: happy AT CENTER WITH FADE
+  - show krish: angry AT RIGHT WITH FADE
   - deuzi says: Hello, welcome to (bold)the Quickstart!(end)
   - wait: 300
+  - krish says happy_school: You are not Welcome!
   - deuzi says normal: Are you ready to create great visual novels?
   - choice:
     - "Yes!":

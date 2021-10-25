@@ -2,11 +2,41 @@
 
       @font-face {
 
-          font-family: 'fontsaudimat-mono';
+          font-family: 'Inter-Light';
 
-          src: url('/assets/gui/fontsfontsaudimat-mono.ttf');
+          src: url('generalInter-Light.ttf');
 
-          src: url('/assets/gui/fontsfontsaudimat-mono.ttf').format('truetype');
+          src: url('generalInter-Light.ttf').format('truetype');
+
+          font-weight: normal;
+
+          font-style: normal;
+
+      }
+
+
+      @font-face {
+
+          font-family: 'Inter-Regular';
+
+          src: url('generalInter-Regular.ttf');
+
+          src: url('generalInter-Regular.ttf').format('truetype');
+
+          font-weight: normal;
+
+          font-style: normal;
+
+      }
+
+
+      @font-face {
+
+          font-family: 'Inter-Bold';
+
+          src: url('generalInter-Bold.ttf');
+
+          src: url('generalInter-Bold.ttf').format('truetype');
 
           font-weight: normal;
 
