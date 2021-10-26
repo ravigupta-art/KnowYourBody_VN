@@ -1,45 +1,91 @@
 start:
   - play morningBGM:
-  - show school_afternoon: WITH FUSION CONTINUE
-  - show deuzi: happy AT CENTER WITH FADE
-  - show krish: angry AT RIGHT WITH FADE
-  - deuzi says: Hello, welcome to (bold)the Quickstart!(end)
+  - show school_gate: WITH FADE CONTINUE
   - wait: 300
-  - krish says happy_school: You are not Welcome!
-  - deuzi says normal: Are you ready to create great visual novels?
+  - text: Outside School Premises
+  - wait: 300
+  - show school_corridor: WITH FADETOBG CONTINUE
+  - show rishi: normal_schooldress AT OUTLEFT WITH FADE
+  - show jolly: normal_schooldress AT OUTRIGHT WITH FADE
+  - show rishi: normal_schooldress AT LEFT WITH MOVE
+  - show jolly: normal_schooldress AT RIGHT WITH MOVE 
+  - wait: 800
+  - rishi says normal_schooldress_saying: I'm so glad school has reopened. Was getting bored to death.
+  - show rishi: normal_schooldress WITH CUT
+  - jolly says normal_schooldress: Looks like you didn't enjoy your vacations.
+  - rishi says: I did… Well, to some extent, but after a point, it was like the walls of my room were closing down.
+  - jolly says wicked_schooldress: Well, what do you expect? It's your room; it's bound to behave weirdly.
+  - rishi says sarcastic_schooldress: Hahaha. When will you learn to crack some quality jokes?
+  - wait: 100
+  - show rishi: normal_schooldress WITH CUT
+  - jolly says pretentious_schooldress:  What are you saying, dude/girl? I crack quality jokes all the time.
+  - wait: 50
+  - show jolly: normal_schooldress WITH CUT
+  - rishi says sarcastic_schooldress:   If you say so.
+  - wait: 200
+  - show rishi: normal_schooldress WITH CUT
+  - show jolly: normal_schooldress AT CENTER WITH MOVE
+  - show natasha: normal_schooldress AT OUTRIGHT WITH CUT
+  - show natasha: normal_schooldress AT RIGHT WITH MOVE
+  - natasha says laughing_schooldress: Hey losers, what are you guys doing back at school? Lost your way?
+  - wait: 200
+  - show natasha: normal_schooldress WITH CUT
+  - rishi says thinking_schooldress: (Internal monologue) Oh no! Natasha is the last person I wanted to bump into today. How do I avoid her now?
   - choice:
-    - "Yes!":
-      - deuzi says happy: That's great! Go ahead!
-    - "Not yet!":
-      - deuzi says: Well, I'll be here when you're ready!
-  - deuzi says normal: If you're new, don't forget to play (bold)the Tutorial(end) game, where me and my friends will show you around the basic features of RenJS.
-  - deuzi says happy: And if you already have some experience, you can go ahead and start writing!
-  - scene: endGame
+    - "Say 'Hi' to Natasha!":
+      - rishi says normal_schooldress_saying: Hi Natasha! How was the summer break?
+      - wait: 200
+      - show rishi: normal_schooldress WITH CUT
+      - natasha says attitude_schooldress: Do I look like I'm interested in making small talk with you? No, I don't have time for pimple faces like yours.
+      - wait: 200
+      - show natasha: normal_schooldress WITH CUT
+      - show jolly: annoyed_schooldress WITH FADE FLIP
+      - jolly says annoyed_schooldress: Hey! Don't call him/her that. Why are you being so mean to him/her?
+    - "Make an excuse and leave.":
+      - rishi says: Go away Natasha. We have a class to attend.
+      - natasha says: Don't you dare try an escape! You can't leave here until I allow you to, pimple-face!
+    - "Take a stand.":
+      - rishi says: I’m not a loser! Don't call us that!
+  # - show rishi: normal_payjama AT OUTRIGHT WITH FADE
+  # - show deuzi: happy AT CENTER WITH FADE
+  # - show krish: angry AT RIGHT WITH FADE
+#   - deuzi says: Hello, welcome to (bold)the Quickstart!(end)
+#   - wait: 300
+#   - krish says happy_school: You are not Welcome!
+#   - deuzi says normal: Are you ready to create great visual novels?
+#   - choice:
+#     - "Yes!":
+#       - deuzi says happy: That's great! Go ahead!
+#     - "Not yet!":
+#       - deuzi says: Well, I'll be here when you're ready!
+#   - deuzi says normal: If you're new, don't forget to play (bold)the Tutorial(end) game, where me and my friends will show you around the basic features of RenJS.
+#   - deuzi says happy: And if you already have some experience, you can go ahead and start writing!
+#   - scene: endGame
 
-endGame:
-  - deuzi says normal: Quickstart over!
-  - hide ALL:
-  - effect ROLLINGCREDITS:
-    endGame: true
-    text:
-      - RenJS.V2 created by
-      - lunafromthemoon
-      - null
-      - In collaboration with
-      - RockDaFox
-      - null
-      - Inspired by Ren'Py
-      - Powered by PhaserJS
-      - null
-      - null
-      - Thanks for playing
-      - The Quickstart Game
-      - null
-      - background art and cgs by
-      - konett
-      - null
-      - characters by
-      - Shida
-      - null
-      - music by
-      - Evan Schaeffer
+# endGame:
+#   - deuzi says normal: Quickstart over!
+#   - hide ALL:
+#   - effect ROLLINGCREDITS:
+#     endGame: true
+#     text:
+#       - RenJS.V2 created by
+#       - lunafromthemoon
+#       - null
+#       - In collaboration with
+#       - RockDaFox
+#       - null
+#       - Inspired by Ren'Py
+#       - Powered by PhaserJS
+#       - null
+#       - null
+#       - Thanks for playing
+#       - The Quickstart Game
+#       - null
+#       - background art and cgs by
+#       - konett
+#       - null
+#       - characters by
+#       - Shida
+#       - null
+#       - music by
+#       - Evan Schaeffer
