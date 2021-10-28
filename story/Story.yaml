@@ -1,8 +1,7 @@
 start:
   - show school_gate: WITH FADE CONTINUE
-  - wait: 300
-  - text: Outside School Premises
-  - wait: 300
+  - show caption_box_01: AT 421,127 WITH CUT
+  - wait: click
   - show school_corridor: WITH FADETOBG CONTINUE
   - show rishi: normal_schooldress AT OUTLEFT WITH FADE
   - show jolly: normal_schooldress AT OUTRIGHT WITH FADE

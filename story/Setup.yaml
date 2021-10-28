@@ -158,6 +158,8 @@ cgs:
   phone2: assets/objects/mobileinhand_search_engine.jpg
   phone3: assets/objects/mobileinhand_video_thumbnail.jpg
   phone4: assets/objects/mobileinhand_website.jpg
+  caption_box_01: assets/objects/caption_box_01.png
+  rishi_internal_monologue_01: assets/objects/Rishi_internalMonolgue_01.png
   
 music:
   rollingCredits: assets/audio/Evan_Schaeffer_-_01_-_Aqueduct.mp3
