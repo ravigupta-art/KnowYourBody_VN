@@ -1,5 +1,4 @@
 start:
-  - play morningBGM:
   - show school_gate: WITH FADE CONTINUE
   - wait: 300
   - text: Outside School Premises
@@ -39,7 +38,7 @@ start:
       - natasha says attitude_schooldress: Do I look like I'm interested in making small talk with you? No, I don't have time for pimple faces like yours.
       - wait: 200
       - show natasha: normal_schooldress WITH CUT
-      - show jolly: annoyed_schooldress WITH FADE FLIP
+      - show jolly: annoyed_schooldress WITH CUT FLIP
       - jolly says annoyed_schooldress: Hey! Don't call him/her that. Why are you being so mean to him/her?
     - "Make an excuse and leave.":
       - rishi says: Go away Natasha. We have a class to attend.

@@ -153,28 +153,6 @@ characters:
       sad_schoolbag: assets/characters/Rishika/Rishika_with_schoolbag_sad.png
       sarcastic_schoolbag: assets/characters/Rishika/Rishika_with_schoolbag_sarcastic.png
       surprised_schoolbag: assets/characters/Rishika/Rishika_with_schoolbag_surprised.png 
-
-
-  deuzi:
-    displayName: Deuzilene
-    speechColour: "#243C2C"
-    looks:
-      normal: assets/characters/Char3Normal.png
-      normal_school: assets/characters/Char3NormalSchool.png
-      happy: assets/characters/Char3Happy.png
-      happy_school: assets/characters/Char3HappySchool.png
-      angry: assets/characters/Char3Angry.png
-      angry_school: assets/characters/Char3AngrySchool.png
-  krish:
-    displayName: Krishnan Iyer
-    looks:
-      normal: assets/characters/Char4Normal.png
-      normal_school: assets/characters/Char4NormalSchool.png
-      happy: assets/characters/Char4Happy.png
-      happy_school: assets/characters/Char4HappySchool.png
-      angry: assets/characters/Char4Angry.png
-      angry_school: assets/characters/Char4AngrySchool.png
-
 cgs:
   phone1: assets/objects/mobileinhand_ebook.jpg
   phone2: assets/objects/mobileinhand_search_engine.jpg

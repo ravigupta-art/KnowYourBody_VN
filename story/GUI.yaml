@@ -2,21 +2,35 @@ name: ThatMate_GUI_01
 resolution:
   - 1920
   - 1080
-assetCounter: 10
+assetCounter: 15
 config:
-  loader: {}
+  loader:
+    inactive: false
+    background:
+      id: asset11
+      assetType: images
+    loading-bar:
+      id: asset13
+      height: '111'
+      width: '1165'
+      'y': '850'
+      x: '378'
+      assetType: spritesheets
   main:
     inactive: false
     buttons:
-      - id: asset10
+      - id: asset15
         sfx: none
         slot: '0'
         binding: start
         height: '111'
-        width: '1696'
-        'y': '318'
-        x: '112'
+        width: '800'
+        'y': '850'
+        x: '560'
         assetType: spritesheets
+    background:
+      id: asset11
+      assetType: images
   settings: {}
   hud:
     inactive: false
@@ -72,7 +86,7 @@ config:
       isTextCentered: true
       isBoxCentered: false
       assetType: spritesheets
-      sample: '3'
+      sample: 2
     interrupt:
       id: asset8
       offset-y: '0'
@@ -106,6 +120,9 @@ assets:
     asset3:
       name: asset3
       fileName: hudasset3.png
+    asset11:
+      name: asset11
+      fileName: loaderasset11.jpg
   spritesheets:
     asset7:
       name: asset7
@@ -117,10 +134,15 @@ assets:
       fileName: hudasset8.png
       w: 1696
       h: 111
-    asset10:
-      name: asset10
-      fileName: mainasset10.png
-      w: 1696
+    asset13:
+      name: asset13
+      fileName: loaderasset13.png
+      w: 1165
+      h: 111
+    asset15:
+      name: asset15
+      fileName: mainasset15.png
+      w: 800
       h: 111
   fonts:
     Inter-Light:
