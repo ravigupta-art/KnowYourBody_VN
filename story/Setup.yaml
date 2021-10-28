@@ -23,7 +23,7 @@ characters:
       annoyed_schoolbag: assets/characters/Jolly/Jolly_In_SchoolDress_With_SchoolBag_Annoyed.png
       happy_schoolbag: assets/characters/Jolly/Jolly_In_SchoolDress_With_SchoolBag_Happy.png
       neutral_schoolbag: assets/characters/Jolly/Jolly_In_SchoolDress_With_SchoolBag_Neutral.png
-      pretentious_schoolbag: assets/characters/Jolly/Jolly_In_SchoolDress_With_SchoolBag_Pretentious.png
+      pretentious_schoolbag: assets/characters/Jolly/Jolly_In_SchoolDress_With_SchoolBag_Prententious.png
       wicked_schoolbag: assets/characters/Jolly/Jolly_In_SchoolDress_With_SchoolBag_WickedSmile.png
   mom:
     displayName: Mom
@@ -68,39 +68,39 @@ characters:
       happy_schoolbag: assets/characters/Preeti/Preeti_with_schoolbag_happy.png
       neutral_schoolbag: assets/characters/Preeti/Preeti_with_schoolbag_neutral.png
       pretentious_schoolbag: assets/characters/Preeti/Preeti_with_schoolbag_pretentious.png
-      wicked_schoolbag: assets/characters/Preeti/Preeti_with_schoolbag_wicked.png
+      wicked_schoolbag: assets/characters/Preeti/Preeti_with_schoolbag_wickedsmile.png
   rishi:
     displayName: Rishi
     speechColour: "#243C2C"
     looks:
-      normal_payjama: assets/characters/Rishi/Rishi_in_payjama.png
-      angry_payjama: assets/characters/Rishi/Rishi_in_payjama_angry.png
-      annoyed_payjama: assets/characters/Rishi/Rishi_in_payjama_annoyed.png
-      fearful_payjama: assets/characters/Rishi/Rishi_in_payjama_fearful.png
-      happy_payjama: assets/characters/Rishi/Rishi_in_payjama_happy.png
-      neutral_payjama: assets/characters/Rishi/Rishi_in_payjama_neutral.png
-      sad_payjama: assets/characters/Rishi/Rishi_in_payjama_sad.png
-      sarcastic_payjama: assets/characters/Rishi/Rishi_in_payjama_sarcastic.png
-      surprised_payjama: assets/characters/Rishi/Rishi_in_payjama_surprised.png
-      normal_schooldress: assets/characters/Rishi/Rishi_in_schooldress.png
-      angry_schooldress: assets/characters/Rishi/Rishi_in_schooldress_angry.png
-      annoyed_schooldress: assets/characters/Rishi/Rishi_in_schooldress_annoyed.png
-      fearful_schooldress: assets/characters/Rishi/Rishi_in_schooldress_fearful.png
-      happy_schooldress: assets/characters/Rishi/Rishi_in_schooldress_happy.png
-      neutral_schooldress: assets/characters/Rishi/Rishi_in_schooldress_neutral.png
-      sad_schooldress: assets/characters/Rishi/Rishi_in_schooldress_sad.png
-      sarcastic_schooldress: assets/characters/Rishi/Rishi_in_schooldress_sarcastic.png
-      surprised_schooldress: assets/characters/Rishi/Rishi_in_schooldress_surprised.png
-      normal_payjama_saying: assets/characters/Rishi/Rishi_saying_something_in_payjama_neutral.png
-      angry_payjama_saying: assets/characters/Rishi/Rishi_saying_something_in_payjama_angry.png
-      fearful_payjama_saying: assets/characters/Rishi/Rishi_saying_something_in_payjama_fearful.png
-      happy_payjama_saying: assets/characters/Rishi/Rishi_saying_something_in_payjama_happy.png
-      neutral_payjama_saying: assets/characters/Rishi/Rishi_saying_something_in_payjama_neutral.png
-      sad_payjama_saying: assets/characters/Rishi/Rishi_saying_something_in_payjama_sad.png
-      angry_schooldress_saying: assets/characters/Rishi/Rishi_saying_something_in_schooldress_angry.png
-      happy_schooldress_saying: assets/characters/Rishi/Rishi_saying_something_in_schooldress_happy.png
-      normal_schooldress_saying: assets/characters/Rishi/Rishi_saying_something_in_schooldress_neutral.png
-      neutral_schooldress_saying: assets/characters/Rishi/Rishi_saying_something_in_schooldress_neutral.png
+      normal_payjama: assets/characters/Rishi/Rishi_normal_in_payjama_normal.png
+      angry_payjama: assets/characters/Rishi/Rishi_normal_in_payjama_angry.png
+      annoyed_payjama: assets/characters/Rishi/Rishi_normal_in_payjama_annoyed.png
+      fearful_payjama: assets/characters/Rishi/Rishi_normal_in_payjama_fearful.png
+      happy_payjama: assets/characters/Rishi/Rishi_normal_in_payjama_happy.png
+      neutral_payjama: assets/characters/Rishi/Rishi_normal_in_payjama_neutral.png
+      sad_payjama: assets/characters/Rishi/Rishi_normal_in_payjama_sad.png
+      sarcastic_payjama: assets/characters/Rishi/Rishi_normal_in_payjama_sarcastic.png
+      surprised_payjama: assets/characters/Rishi/Rishi_normal_in_payjama_surprised.png
+      normal_schooldress: assets/characters/Rishi/Rishi_normal_in_schooldress_normal.png
+      angry_schooldress: assets/characters/Rishi/Rishi_normal_in_schooldress_angry.png
+      annoyed_schooldress: assets/characters/Rishi/Rishi_normal_in_schooldress_annoyed.png
+      fearful_schooldress: assets/characters/Rishi/Rishi_normal_in_schooldress_fearful.png
+      happy_schooldress: assets/characters/Rishi/Rishi_normal_in_schooldress_happy.png
+      neutral_schooldress: assets/characters/Rishi/Rishi_normal_in_schooldress_neutral.png
+      sad_schooldress: assets/characters/Rishi/Rishi_normal_in_schooldress_sad.png
+      sarcastic_schooldress: assets/characters/Rishi/Rishi_normal_in_schooldress_sarcastic.png
+      surprised_schooldress: assets/characters/Rishi/Rishi_normal_in_schooldress_surprised.png
+      normal_payjama_saying: assets/characters/Rishi/Rishi_sayingsomethig_in_payjama_neutral.png
+      angry_payjama_saying: assets/characters/Rishi/Rishi_sayingsomethig_in_payjama_angry.png
+      fearful_payjama_saying: assets/characters/Rishi/Rishi_sayingsomethig_in_payjama_fearful.png
+      happy_payjama_saying: assets/characters/Rishi/Rishi_sayingsomethig_in_payjama_happy.png
+      neutral_payjama_saying: assets/characters/Rishi/Rishi_sayingsomethig_in_payjama_neutral.png
+      sad_payjama_saying: assets/characters/Rishi/Rishi_sayingsomethig_in_payjama_sad.png
+      angry_schooldress_saying: assets/characters/Rishi/Rishi_sayingsomething_in_schooldress_angry.png
+      happy_schooldress_saying: assets/characters/Rishi/Rishi_sayingsomething_in_schooldress_happy.png
+      normal_schooldress_saying: assets/characters/Rishi/Rishi_sayingsomething_in_schooldress_neutral.png
+      neutral_schooldress_saying: assets/characters/Rishi/Rishi_sayingsomething_in_schooldress_neutral.png
       thinking_payjama: assets/characters/Rishi/Rishi_thinking_in_payjama.png
       thinking_schooldress: assets/characters/Rishi/Rishi_thinking_in_schooldress.png
       normal_schoolbag: assets/characters/Rishi/Rishi_with_schoolbag_normal.png
@@ -115,34 +115,34 @@ characters:
     displayName: Rishika
     speechColour: "#243C2C"
     looks:
-      normal_payjama: assets/characters/Rishika/Rishika_in_payjama.png
-      angry_payjama: assets/characters/Rishika/Rishika_in_payjama_angry.png
-      annoyed_payjama: assets/characters/Rishika/Rishika_in_payjama_annoyed.png
-      fearful_payjama: assets/characters/Rishika/Rishika_in_payjama_fearful.png
-      happy_payjama: assets/characters/Rishika/Rishika_in_payjama_happy.png
-      neutral_payjama: assets/characters/Rishika/Rishika_in_payjama_neutral.png
-      sad_payjama: assets/characters/Rishika/Rishika_in_payjama_sad.png
-      sarcastic_payjama: assets/characters/Rishika/Rishika_in_payjama_sarcastic.png
-      surprised_payjama: assets/characters/Rishika/Rishika_in_payjama_surprised.png
-      normal_schooldress: assets/characters/Rishika/Rishika_in_schooldress.png
-      angry_schooldress: assets/characters/Rishika/Rishika_in_schooldress_angry.png
-      annoyed_schooldress: assets/characters/Rishika/Rishika_in_schooldress_annoyed.png
-      fearful_schooldress: assets/characters/Rishika/Rishika_in_schooldress_fearful.png
-      happy_schooldress: assets/characters/Rishika/Rishika_in_schooldress_happy.png
-      neutral_schooldress: assets/characters/Rishika/Rishika_in_schooldress_neutral.png
-      sad_schooldress: assets/characters/Rishika/Rishika_in_schooldress_sad.png
-      sarcastic_schooldress: assets/characters/Rishika/Rishika_in_schooldress_sarcastic.png
-      surprised_schooldress: assets/characters/Rishika/Rishika_in_schooldress_surprised.png
-      normal_payjama_saying: assets/characters/Rishika/Rishika_saying_something_in_payjama_neutral.png
-      angry_payjama_saying: assets/characters/Rishika/Rishika_saying_something_in_payjama_angry.png
-      fearful_payjama_saying: assets/characters/Rishika/Rishika_saying_something_in_payjama_fearful.png
-      happy_payjama_saying: assets/characters/Rishika/Rishika_saying_something_in_payjama_happy.png
-      neutral_payjama_saying: assets/characters/Rishika/Rishika_saying_something_in_payjama_neutral.png
-      sad_payjama_saying: assets/characters/Rishika/Rishika_saying_something_in_payjama_sad.png
-      angry_schooldress_saying: assets/characters/Rishika/Rishika_saying_something_in_schooldress_angry.png
-      happy_schooldress_saying: assets/characters/Rishika/Rishika_saying_something_in_schooldress_happy.png
-      normal_schooldress_saying: assets/characters/Rishika/Rishika_saying_something_in_schooldress_neutral.png
-      neutral_schooldress_saying: assets/characters/Rishika/Rishika_saying_something_in_schooldress_neutral.png
+      normal_payjama: assets/characters/Rishika/Rishika_normal_in_payjama.png
+      angry_payjama: assets/characters/Rishika/Rishika_normal_in_payjama_angry.png
+      annoyed_payjama: assets/characters/Rishika/Rishika_normal_in_payjama_annoyed.png
+      fearful_payjama: assets/characters/Rishika/Rishika_normal_in_payjama_fearful.png
+      happy_payjama: assets/characters/Rishika/Rishika_normal_in_payjama_happy.png
+      neutral_payjama: assets/characters/Rishika/Rishika_normal_in_payjama_neutral.png
+      sad_payjama: assets/characters/Rishika/Rishika_normal_in_payjama_sad.png
+      sarcastic_payjama: assets/characters/Rishika/Rishika_normal_in_payjama_sarcastic.png
+      surprised_payjama: assets/characters/Rishika/Rishika_normal_in_payjama_surprised.png
+      normal_schooldress: assets/characters/Rishika/Rishika_normal_in_schooldress_normal.png
+      angry_schooldress: assets/characters/Rishika/Rishika_normal_in_schooldress_angry.png
+      annoyed_schooldress: assets/characters/Rishika/Rishika_normal_in_schooldress_annoyed.png
+      fearful_schooldress: assets/characters/Rishika/Rishika_normal_in_schooldress_fearful.png
+      happy_schooldress: assets/characters/Rishika/Rishika_normal_in_schooldress_happy.png
+      neutral_schooldress: assets/characters/Rishika/Rishika_normal_in_schooldress_neutral.png
+      sad_schooldress: assets/characters/Rishika/Rishika_normal_in_schooldress_sad.png
+      sarcastic_schooldress: assets/characters/Rishika/Rishika_normal_in_schooldress_sarcastic.png
+      surprised_schooldress: assets/characters/Rishika/Rishika_normal_in_schooldress_surprised.png
+      normal_payjama_saying: assets/characters/Rishika/Rishika_saynigsomethig_in_payjama_neutral.png
+      angry_payjama_saying: assets/characters/Rishika/Rishika_saynigsomethig_in_payjama_angry.png
+      fearful_payjama_saying: assets/characters/Rishika/Rishika_saynigsomethig_in_payjama_fearful.png
+      happy_payjama_saying: assets/characters/Rishika/Rishika_saynigsomethig_in_payjama_happy.png
+      neutral_payjama_saying: assets/characters/Rishika/Rishika_saynigsomethig_in_payjama_neutral.png
+      sad_payjama_saying: assets/characters/Rishika/Rishika_saynigsomethig_in_payjama_sad.png
+      angry_schooldress_saying: assets/characters/Rishika/Rishika_sayingsomething_in_schooldress_angry.png
+      happy_schooldress_saying: assets/characters/Rishika/Rishika_sayingsomething_in_schooldress_happy.png
+      normal_schooldress_saying: assets/characters/Rishika/Rishika_sayingsomething_in_schooldress_neutral.png
+      neutral_schooldress_saying: assets/characters/Rishika/Rishika_sayingsomething_in_schooldress_neutral.png
       thinking_payjama: assets/characters/Rishika/Rishika_thinking_in_payjama.png
       thinking_schooldress: assets/characters/Rishika/Rishika_thinking_in_schooldress.png
       normal_schoolbag: assets/characters/Rishika/Rishika_with_schoolbag_normal.png

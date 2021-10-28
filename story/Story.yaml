@@ -1,13 +1,16 @@
 start:
   - show school_gate: WITH FADE CONTINUE
   - show caption_box_01: AT 421,127 WITH CUT
-  - wait: click
+  - wait: 1600
+  - hide caption_box_01:
   - show school_corridor: WITH FADETOBG CONTINUE
+  - wait: 100
   - show rishi: normal_schooldress AT OUTLEFT WITH FADE
   - show jolly: normal_schooldress AT OUTRIGHT WITH FADE
-  - show rishi: normal_schooldress AT LEFT WITH MOVE
-  - show jolly: normal_schooldress AT RIGHT WITH MOVE 
-  - wait: 800
+  - wait: 100
+  - show rishi: normal_schooldress AT OFFCENTER-LEFT WITH MOVE
+  - show jolly: normal_schooldress AT OFFCENTER-RIGHT WITH MOVE 
+  - wait: 300
   - rishi says normal_schooldress_saying: I'm so glad school has reopened. Was getting bored to death.
   - show rishi: normal_schooldress WITH CUT
   - jolly says normal_schooldress: Looks like you didn't enjoy your vacations.
@@ -28,7 +31,9 @@ start:
   - natasha says laughing_schooldress: Hey losers, what are you guys doing back at school? Lost your way?
   - wait: 200
   - show natasha: normal_schooldress WITH CUT
-  - rishi says thinking_schooldress: (Internal monologue) Oh no! Natasha is the last person I wanted to bump into today. How do I avoid her now?
+  # - rishi says thinking_schooldress: (Internal monologue) Oh no! Natasha is the last person I wanted to bump into today. How do I avoid her now?
+  - show rishi_internal_monologue_01: AT 860,257 WITH CUT
+  - wait: click
   - choice:
     - "Say 'Hi' to Natasha!":
       - rishi says normal_schooldress_saying: Hi Natasha! How was the summer break?
