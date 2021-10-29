@@ -1,7 +1,7 @@
 start:
   - show school_gate: WITH FADE CONTINUE
   - show caption_box_01: AT 421,127 WITH CUT
-  - wait: 1600
+  - wait: 1800
   - hide caption_box_01: WITH CUT
   - show school_corridor: WITH FADETOBG CONTINUE
   - wait: 100
@@ -9,8 +9,8 @@ start:
   - show jolly: normal_schooldress AT OUTRIGHT WITH FADE
   - wait: 100
   - show rishi: normal_schooldress AT LEFT WITH MOVE
-  - show jolly: normal_schooldress AT OFFCENTER-RIGHT WITH MOVE 
-  - click: 
+  - show jolly: normal_schooldress AT OFFCENTER-RIGHT WITH MOVE
+  - wait: 1600
   - rishi says normal_schooldress_saying: I'm so glad school has reopened. Was getting bored to death.
   - show rishi: normal_schooldress WITH CUT
   - jolly says normal_schooldress: Looks like you didn't enjoy your vacations.
@@ -19,7 +19,7 @@ start:
   - rishi says sarcastic_schooldress: Hahaha. When will you learn to crack some quality jokes?
   - wait: 100
   - show rishi: normal_schooldress WITH CUT
-  - jolly says pretentious_schooldress:  What are you saying, dude/girl? I crack quality jokes all the time.
+  - jolly says pretentious_schooldress:  What are you saying, dude? I crack quality jokes all the time.
   - wait: 50
   - show jolly: normal_schooldress WITH CUT
   - rishi says sarcastic_schooldress:   If you say so.
@@ -50,46 +50,3 @@ start:
       - natasha says: Don't you dare try an escape! You can't leave here until I allow you to, pimple-face!
     - "Take a stand.":
       - rishi says: I’m not a loser! Don't call us that!
-  # - show rishi: normal_payjama AT OUTRIGHT WITH FADE
-  # - show deuzi: happy AT CENTER WITH FADE
-  # - show krish: angry AT RIGHT WITH FADE
-#   - deuzi says: Hello, welcome to (bold)the Quickstart!(end)
-#   - wait: 300
-#   - krish says happy_school: You are not Welcome!
-#   - deuzi says normal: Are you ready to create great visual novels?
-#   - choice:
-#     - "Yes!":
-#       - deuzi says happy: That's great! Go ahead!
-#     - "Not yet!":
-#       - deuzi says: Well, I'll be here when you're ready!
-#   - deuzi says normal: If you're new, don't forget to play (bold)the Tutorial(end) game, where me and my friends will show you around the basic features of RenJS.
-#   - deuzi says happy: And if you already have some experience, you can go ahead and start writing!
-#   - scene: endGame
-
-# endGame:
-#   - deuzi says normal: Quickstart over!
-#   - hide ALL:
-#   - effect ROLLINGCREDITS:
-#     endGame: true
-#     text:
-#       - RenJS.V2 created by
-#       - lunafromthemoon
-#       - null
-#       - In collaboration with
-#       - RockDaFox
-#       - null
-#       - Inspired by Ren'Py
-#       - Powered by PhaserJS
-#       - null
-#       - null
-#       - Thanks for playing
-#       - The Quickstart Game
-#       - null
-#       - background art and cgs by
-#       - konett
-#       - null
-#       - characters by
-#       - Shida
-#       - null
-#       - music by
-#       - Evan Schaeffer
