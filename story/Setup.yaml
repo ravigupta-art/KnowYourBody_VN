@@ -9,6 +9,7 @@ backgrounds:
 characters:
   jolly:
     displayName: Jolly
+    nameBox: nameBoxRight
     speechColour: "#243C2C"
     looks:
       normal_schooldress: assets/characters/Jolly/Jolly_In_SchoolDress_Normal.png
@@ -152,7 +153,7 @@ characters:
       neutral_schoolbag: assets/characters/Rishika/Rishika_with_schoolbag_neutral.png
       sad_schoolbag: assets/characters/Rishika/Rishika_with_schoolbag_sad.png
       sarcastic_schoolbag: assets/characters/Rishika/Rishika_with_schoolbag_sarcastic.png
-      surprised_schoolbag: assets/characters/Rishika/Rishika_with_schoolbag_surprised.png 
+      surprised_schoolbag: assets/characters/Rishika/Rishika_with_schoolbag_surprised.png
 cgs:
   phone1: assets/objects/mobileinhand_ebook.jpg
   phone2: assets/objects/mobileinhand_search_engine.jpg
@@ -160,7 +161,7 @@ cgs:
   phone4: assets/objects/mobileinhand_website.jpg
   caption_box_01: assets/objects/caption_box_01.png
   rishi_internal_monologue_01: assets/objects/Rishi_internalMonolgue_01.png
-  
+
 music:
   rollingCredits: assets/audio/Evan_Schaeffer_-_01_-_Aqueduct.mp3
   morningBGM: assets/audio/Evan_Schaeffer_-_03_-_Glow.mp3

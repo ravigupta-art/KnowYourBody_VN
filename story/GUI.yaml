@@ -4,111 +4,95 @@ resolution:
   - 1080
 assetCounter: 15
 config:
-  loader:
-    inactive: false
-    background:
-      id: asset11
-      assetType: images
-    loading-bar:
-      id: asset13
-      height: '111'
-      width: '1165'
-      'y': '850'
-      x: '378'
-      assetType: spritesheets
-  main:
-    inactive: false
-    buttons:
-      - id: asset15
-        sfx: none
-        slot: '0'
-        binding: start
-        height: '111'
-        width: '800'
-        'y': '850'
-        x: '560'
-        assetType: spritesheets
-    background:
-      id: asset11
-      assetType: images
-  settings: {}
   hud:
-    inactive: false
-    message-box:
-      id: asset1
-      text-width: '1620'
-      offset-y: '60'
-      offset-x: '105'
-      align: left
-      color: '#FFFFFF'
-      font: Inter-Regular
-      lineSpacing: '0'
-      size: '36'
-      sfx: none
-      'y': '772'
-      x: '55'
-      assetType: images
-    name-box:
-      id: asset2
-      offset-y: '0'
-      offset-x: '0'
-      align: left
-      color: '#243C2C'
-      font: Inter-Bold
-      lineSpacing: '0'
-      size: '36'
-      'y': '735'
-      x: '115'
-      isTextCentered: true
-      assetType: images
-    ctc:
-      id: asset3
-      'y': 986
-      x: 1792
-      animationStyle: tween
-      assetType: images
-    choice:
-      id: asset7
-      offset-y: '0'
-      offset-x: '0'
-      align: left
-      chosen-color: '#B8C9FF'
-      color: '#FFFFFF'
-      font: Inter-Regular
-      lineSpacing: '0'
-      size: '36'
-      separation: '50'
-      height: '111'
-      width: '1696'
-      sfx: none
-      'y': 110
+    - id: default
+      type: choices
+      asset: asset7
       x: 112
-      isTextCentered: true
-      isBoxCentered: false
-      assetType: spritesheets
-      sample: 2
-    interrupt:
-      id: asset8
-      offset-y: '0'
-      offset-x: '0'
-      align: left
-      color: '#FFFFFF'
-      font: Inter-Regular
-      lineSpacing: '0'
-      size: '36'
-      separation: ''
-      height: '111'
-      width: '1696'
+      'y': 110
+      alignment: topDown
+      separation: 50
+      sfx: startsfx
+      chosenColor: '#B8C9FF'
+      text:
+        x: 0
+        'y': 0
+        lineSpacing: '0'
+        style:
+          font: Inter-Regular
+          fontSize: 36px
+          fill: '#FFFFFF'
+          align: left
+          boundsAlignH: center
+          boundsAlignV: middle
+    - id: default
+      type: messageBox
+      asset: asset1
+      x: '55'
+      'y': '772'
       sfx: none
-      'y': 0
-      x: 0
-      isTextCentered: true
-      isBoxCentered: false
-      textStyleAsChoice: true
-      textPositionAsChoice: true
-      inlineWithChoice: true
-      assetType: spritesheets
-  saveload: {}
+      text:
+        x: 105
+        'y': 60
+        lineSpacing: '0'
+        style:
+          font: Inter-Regular
+          fontSize: 36px
+          fill: '#FFFFFF'
+          align: left
+          wordWrap: true
+          wordWrapWidth: '1620'
+      ctc:
+        x: 1737
+        'y': 214
+        asset: asset3
+        animationStyle: tween
+    - id: default
+      type: nameBox
+      asset: asset2
+      x: '115'
+      'y': '735'
+      text:
+        x: 0
+        'y': 0
+        lineSpacing: '0'
+        style:
+          font: Inter-Bold
+          fontSize: 36px
+          fill: '#243C2C'
+          align: left
+          boundsAlignH: center
+          boundsAlignV: middle
+    - id: nameBoxRight
+      type: nameBox
+      asset: asset2
+      x: '1479'
+      'y': '735'
+      text:
+        x: 0
+        'y': 0
+        lineSpacing: '0'
+        style:
+          font: Inter-Bold
+          fontSize: 36px
+          fill: '#243C2C'
+          align: left
+          boundsAlignH: center
+          boundsAlignV: middle
+  menus:
+    main:
+      - type: image
+        x: 0
+        'y': 0
+        asset: asset11
+      - type: button
+        x: '560'
+        'y': '850'
+        asset: asset15
+        binding: start
+        sfx: startsfx
+    settings: []
+    saveload: []
 assets:
   images:
     asset1:
@@ -154,6 +138,10 @@ assets:
     Inter-Bold:
       fileName: generalInter-Bold.ttf
       name: Inter-Bold
-  audio: {}
-madeWithRenJSBuilder: true
+  audio:
+    startsfx:
+      fileName: startsfx.mp3
+      name: startsfx
+      type: sfx
+GUIVersion: "2.0"
 assetsPath: assets/gui/

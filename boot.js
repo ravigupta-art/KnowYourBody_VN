@@ -25,7 +25,8 @@ const RenJSConfig =  {
   }
 },
   'fonts': 'assets/gui/fonts.css',
-  'logChoices': true
+  'logChoices': true,
+  'debugMode': true
 }
 
 const RenJSGame = new RenJS.game(RenJSConfig)
