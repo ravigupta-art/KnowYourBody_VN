@@ -1,5 +1,9 @@
 start:
   - show school_gate: WITH FADE CONTINUE
+  - show rishi: thinking_schooldress WITH CUT AT EXTREME-LEFT
+  - text IN internalMonologue_ExtremeLeft_4lines: "Oh no! \n Natasha is the last person I wanted to bump into today. How do I avoid her now?"
+  - show jolly: normal_schooldress WITH CUT AT EXTREME-RIGHT
+  - text IN internalMonologue_ExtremeRight_4lines: "Oh no! \n Natasha is the last person I wanted to bump into today. How do I avoid her now?"
   - show caption_box_01: AT 421,127 WITH CUT
   - show tap_gesture: AT 960,157 WITH FADE
   - animate tap_gesture:
@@ -35,10 +39,12 @@ start:
   - natasha says laughing_schooldress: Hey losers, what are you guys doing back at school? Lost your way?
   - wait: 200
   - show natasha: normal_schooldress WITH CUT
+  - show rishi: thinking_schooldress WITH CUT
+  - text IN internalMonologue_Left: "Oh no! \n Natasha is the last person I wanted to bump into today. How do I avoid her now?"
   # - rishi says thinking_schooldress: (Internal monologue) Oh no! Natasha is the last person I wanted to bump into today. How do I avoid her now?
-  - show rishi_internal_monologue_01: AT 860,257 WITH CUT
-  - wait: CLICK
-  - hide rishi_internal_monologue_01:
+  #- show rishi_internal_monologue_01: AT 860,257 WITH CUT
+  #- wait: CLICK
+  #- hide rishi_internal_monologue_01:
   - choice:
     - "Say 'Hi' to Natasha!":
       - rishi says normal_schooldress_saying: Hi Natasha! How was the summer break?

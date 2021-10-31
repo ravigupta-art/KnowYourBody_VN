@@ -47,6 +47,346 @@ config:
         'y': 214
         asset: asset3
         animationStyle: tween
+    - id: internalMonologue_Left
+      type: messageBox
+      asset: asset4
+      x: '450'
+      'y': '22'
+      sfx: none
+      text:
+        x: 200
+        'y': 138
+        lineSpacing: 0
+        style:
+          font: Inter-Regular
+          fontSize: 36px
+          fill: '#FFFFFF'
+          align: center
+          wordWrap: true
+          wordWrapWidth: '700'
+    - id: internalMonologue_Left_2lines
+      type: messageBox
+      asset: asset4
+      x: '450'
+      'y': '22'
+      sfx: none
+      text:
+        x: 200
+        'y': 116
+        lineSpacing: 0
+        style:
+          font: Inter-Regular
+          fontSize: 36px
+          fill: '#FFFFFF'
+          align: center
+          wordWrap: true
+          wordWrapWidth: '700'
+    - id: internalMonologue_Left_3lines
+      type: messageBox
+      asset: asset4
+      x: '450'
+      'y': '22'
+      sfx: none
+      text:
+        x: 200
+        'y': 88
+        lineSpacing: 0
+        style:
+          font: Inter-Regular
+          fontSize: 36px
+          fill: '#FFFFFF'
+          align: center
+          wordWrap: true
+          wordWrapWidth: '700'
+    - id: internalMonologue_Left_4lines
+      type: messageBox
+      asset: asset4
+      x: '450'
+      'y': '22'
+      sfx: none
+      text:
+        x: 200
+        'y': 67
+        lineSpacing: 0
+        style:
+          font: Inter-Regular
+          fontSize: 36px
+          fill: '#FFFFFF'
+          align: center
+          wordWrap: true
+          wordWrapWidth: '700'
+    - id: internalMonologue_Left_5lines
+      type: messageBox
+      asset: asset4
+      x: '450'
+      'y': '22'
+      sfx: none
+      text:
+        x: 200
+        'y': 45
+        lineSpacing: 0
+        style:
+          font: Inter-Regular
+          fontSize: 36px
+          fill: '#FFFFFF'
+          align: center
+          wordWrap: true
+          wordWrapWidth: '700'
+    - id: internalMonologue_ExtremeLeft
+      type: messageBox
+      asset: asset4
+      x: '250'
+      'y': '22'
+      sfx: none
+      text:
+        x: 200
+        'y': 138
+        lineSpacing: 0
+        style:
+          font: Inter-Regular
+          fontSize: 36px
+          fill: '#FFFFFF'
+          align: center
+          wordWrap: true
+          wordWrapWidth: '700'
+    - id: internalMonologue_ExtremeLeft_2lines
+      type: messageBox
+      asset: asset4
+      x: '250'
+      'y': '22'
+      sfx: none
+      text:
+        x: 200
+        'y': 116
+        lineSpacing: 0
+        style:
+          font: Inter-Regular
+          fontSize: 36px
+          fill: '#FFFFFF'
+          align: center
+          wordWrap: true
+          wordWrapWidth: '700'
+    - id: internalMonologue_ExtremeLeft_3lines
+      type: messageBox
+      asset: asset4
+      x: '250'
+      'y': '22'
+      sfx: none
+      text:
+        x: 200
+        'y': 88
+        lineSpacing: 0
+        style:
+          font: Inter-Regular
+          fontSize: 36px
+          fill: '#FFFFFF'
+          align: center
+          wordWrap: true
+          wordWrapWidth: '700'
+    - id: internalMonologue_ExtremeLeft_4lines
+      type: messageBox
+      asset: asset4
+      x: '250'
+      'y': '22'
+      sfx: none
+      text:
+        x: 200
+        'y': 67
+        lineSpacing: 0
+        style:
+          font: Inter-Regular
+          fontSize: 36px
+          fill: '#FFFFFF'
+          align: center
+          wordWrap: true
+          wordWrapWidth: '700'
+    - id: internalMonologue_ExtremeLeft_5lines
+      type: messageBox
+      asset: asset4
+      x: '250'
+      'y': '22'
+      sfx: none
+      text:
+        x: 200
+        'y': 45
+        lineSpacing: 0
+        style:
+          font: Inter-Regular
+          fontSize: 36px
+          fill: '#FFFFFF'
+          align: center
+          wordWrap: true
+          wordWrapWidth: '700'
+    - id: internalMonologue_Right
+      type: messageBox
+      asset: asset5
+      x: '460'
+      'y': '22'
+      sfx: none
+      text:
+        x: 200
+        'y': 138
+        lineSpacing: 0
+        style:
+          font: Inter-Regular
+          fontSize: 36px
+          fill: '#FFFFFF'
+          align: center
+          wordWrap: true
+          wordWrapWidth: '700'
+    - id: internalMonologue_Right_2lines
+      type: messageBox
+      asset: asset5
+      x: '460'
+      'y': '22'
+      sfx: none
+      text:
+        x: 200
+        'y': 116
+        lineSpacing: 0
+        style:
+          font: Inter-Regular
+          fontSize: 36px
+          fill: '#FFFFFF'
+          align: center
+          wordWrap: true
+          wordWrapWidth: '700'
+    - id: internalMonologue_Right_3lines
+      type: messageBox
+      asset: asset5
+      x: '460'
+      'y': '22'
+      sfx: none
+      text:
+        x: 200
+        'y': 88
+        lineSpacing: 0
+        style:
+          font: Inter-Regular
+          fontSize: 36px
+          fill: '#FFFFFF'
+          align: center
+          wordWrap: true
+          wordWrapWidth: '700'
+    - id: internalMonologue_Right_4lines
+      type: messageBox
+      asset: asset5
+      x: '460'
+      'y': '22'
+      sfx: none
+      text:
+        x: 200
+        'y': 67
+        lineSpacing: 0
+        style:
+          font: Inter-Regular
+          fontSize: 36px
+          fill: '#FFFFFF'
+          align: center
+          wordWrap: true
+          wordWrapWidth: '700'
+    - id: internalMonologue_Right_5lines
+      type: messageBox
+      asset: asset5
+      x: '460'
+      'y': '22'
+      sfx: none
+      text:
+        x: 200
+        'y': 45
+        lineSpacing: 0
+        style:
+          font: Inter-Regular
+          fontSize: 36px
+          fill: '#FFFFFF'
+          align: center
+          wordWrap: true
+          wordWrapWidth: '700'
+    - id: internalMonologue_ExtremeRight
+      type: messageBox
+      asset: asset5
+      x: '680'
+      'y': '22'
+      sfx: none
+      text:
+        x: 200
+        'y': 138
+        lineSpacing: 0
+        style:
+          font: Inter-Regular
+          fontSize: 36px
+          fill: '#FFFFFF'
+          align: center
+          wordWrap: true
+          wordWrapWidth: '700'
+    - id: internalMonologue_ExtremeRight_2lines
+      type: messageBox
+      asset: asset5
+      x: '680'
+      'y': '22'
+      sfx: none
+      text:
+        x: 200
+        'y': 116
+        lineSpacing: 0
+        style:
+          font: Inter-Regular
+          fontSize: 36px
+          fill: '#FFFFFF'
+          align: center
+          wordWrap: true
+          wordWrapWidth: '700'
+    - id: internalMonologue_ExtremeRight_3lines
+      type: messageBox
+      asset: asset5
+      x: '680'
+      'y': '22'
+      sfx: none
+      text:
+        x: 200
+        'y': 88
+        lineSpacing: 0
+        style:
+          font: Inter-Regular
+          fontSize: 36px
+          fill: '#FFFFFF'
+          align: center
+          wordWrap: true
+          wordWrapWidth: '700'
+    - id: internalMonologue_ExtremeRight_4lines
+      type: messageBox
+      asset: asset5
+      x: '680'
+      'y': '22'
+      sfx: none
+      text:
+        x: 200
+        'y': 67
+        lineSpacing: 0
+        style:
+          font: Inter-Regular
+          fontSize: 36px
+          fill: '#FFFFFF'
+          align: center
+          wordWrap: true
+          wordWrapWidth: '700'
+    - id: internalMonologue_ExtremeRight_5lines
+      type: messageBox
+      asset: asset5
+      x: '680'
+      'y': '22'
+      sfx: none
+      text:
+        x: 200
+        'y': 45
+        lineSpacing: 0
+        style:
+          font: Inter-Regular
+          fontSize: 36px
+          fill: '#FFFFFF'
+          align: center
+          wordWrap: true
+          wordWrapWidth: '700'
     - id: default
       type: nameBox
       asset: asset2
@@ -104,6 +444,12 @@ assets:
     asset3:
       name: asset3
       fileName: hudasset3.png
+    asset4:
+      name: asset4
+      fileName: InternalMonologue_Left.png
+    asset5:
+      name: asset5
+      fileName: InternalMonologue_Right.png
     asset11:
       name: asset11
       fileName: loaderasset11.jpg
