@@ -1,7 +1,11 @@
 start:
   - show school_gate: WITH FADE CONTINUE
   - show caption_box_01: AT 421,127 WITH CUT
+  - show tap_gesture: AT 960,157 WITH FADE
+  - animate tap_gesture:
+    spritesheet: loop LOOPED
   - wait: click
+  - hide tap_gesture:
   - hide caption_box_01: WITH CUT
   - show school_corridor: WITH FADETOBG CONTINUE
   - wait: 100

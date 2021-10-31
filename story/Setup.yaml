@@ -161,7 +161,10 @@ cgs:
   phone4: assets/objects/mobileinhand_website.jpg
   caption_box_01: assets/objects/caption_box_01.png
   rishi_internal_monologue_01: assets/objects/Rishi_internalMonolgue_01.png
-
+  tap_gesture:
+    spritesheet: assets/objects/TapGesture_spritesheet.png 200 200
+    animations:
+      loop: 1 18 12
 music:
   rollingCredits: assets/audio/Evan_Schaeffer_-_01_-_Aqueduct.mp3
   morningBGM: assets/audio/Evan_Schaeffer_-_03_-_Glow.mp3
