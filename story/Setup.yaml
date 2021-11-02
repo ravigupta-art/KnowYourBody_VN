@@ -10,7 +10,7 @@ characters:
   jolly:
     displayName: Jolly
     nameBox: nameBoxRight
-    speechColour: "#243C2C"
+    color: "#243C2C"
     looks:
       normal_schooldress: assets/characters/Jolly/Jolly_In_SchoolDress_Normal.png
       angry_schooldress: assets/characters/Jolly/Jolly_In_SchoolDress_Angry.png
@@ -28,7 +28,7 @@ characters:
       wicked_schoolbag: assets/characters/Jolly/Jolly_In_SchoolDress_With_SchoolBag_WickedSmile.png
   mom:
     displayName: Mom
-    speechColour: "#243C2C"
+    color: "#243C2C"
     looks:
       normal: assets/characters/Mom/mom_normal.png
       annoyed: assets/characters/Mom/mom_annoyed.png
@@ -41,7 +41,7 @@ characters:
       thoughtful: assets/characters/Mom/mom_thoughtful.png
   natasha:
     displayName: Natasha
-    speechColour: "#243C2C"
+    color: "#243C2C"
     looks:
       angry_schooldress: assets/characters/Natasha/natasha_normal_in_schooldress_angry.png
       annoyed_schooldress: assets/characters/Natasha/natasha_normal_in_schooldress_annoyed.png
@@ -54,7 +54,7 @@ characters:
       normal_schooldress: assets/characters/Natasha/natasha_normal_in_schooldress_normal.png
   preeti:
     displayName: Preeti
-    speechColour: "#243C2C"
+    color: "#243C2C"
     looks:
       normal_schooldress: assets/characters/Preeti/Preeti_with_schoolbag_normal.png
       angry_schooldress: assets/characters/Preeti/Preeti_normal_in_schooldress_angry.png
@@ -72,7 +72,7 @@ characters:
       wicked_schoolbag: assets/characters/Preeti/Preeti_with_schoolbag_wickedsmile.png
   rishi:
     displayName: Rishi
-    speechColour: "#243C2C"
+    color: "#243C2C"
     looks:
       normal_payjama: assets/characters/Rishi/Rishi_normal_in_payjama_normal.png
       angry_payjama: assets/characters/Rishi/Rishi_normal_in_payjama_angry.png
@@ -114,7 +114,7 @@ characters:
       surprised_schoolbag: assets/characters/Rishi/Rishi_with_schoolbag_surprised.png
   rishika:
     displayName: Rishika
-    speechColour: "#243C2C"
+    color: "#243C2C"
     looks:
       normal_payjama: assets/characters/Rishika/Rishika_normal_in_payjama.png
       angry_payjama: assets/characters/Rishika/Rishika_normal_in_payjama_angry.png
