@@ -8,14 +8,16 @@ start:
   # - show jolly: normal_schooldress WITH CUT AT EXTREME-RIGHT
   # - text IN internalMonologue_ExtremeRight_4lines: "Oh no! \n Natasha is the last person I wanted to bump into today. How do I avoid her now?"
   # Showing caption box as a CG
-  - show caption_box_01: AT 421,127 WITH CUT
+  # - show caption_box_01: AT 421,127 WITH CUT
   - show tap_gesture: AT 960,157 WITH FADE
   - animate tap_gesture:
     spritesheet: loop LOOPED
-  # Adding wait click to scene.
   - wait: click
+  - text IN captionBoxSmall: Outside School Premises
+  # Adding wait click to scene.
   - hide tap_gesture:
-  - hide caption_box_01: WITH CUT
+  # - hide caption_box_01: WITH CUT
+  - scene: scene03
   - show school_corridor: WITH FADETOBG CONTINUE
   - wait: 100
   - show rishi: normal_schooldress AT OUTLEFT WITH FADE
@@ -27,7 +29,8 @@ start:
   - rishi says normal_schooldress_saying: I'm so glad school has reopened. Was getting bored to death.
   - show rishi: normal_schooldress WITH CUT
   - jolly says normal_schooldress: Looks like you didn't enjoy your vacations.
-  - rishi says: I did… Well, to some extent, but after a point, it was like the walls of my room were closing down.
+  - rishi says normal_schooldress_saying: I did… Well, to some extent, but after a point, it was like the walls of my room were closing down.
+  - show rishi: normal_schooldress WITH CUT
   - jolly says wicked_schooldress: Well, what do you expect? It's your room; it's bound to behave weirdly.
   - rishi says sarcastic_schooldress: Hahaha. When will you learn to crack some quality jokes?
   - wait: 100
@@ -60,7 +63,8 @@ start:
       - natasha says happy_schooldress: Because he's a sore sight for my eyes!
       - natasha says giggles_schooldress: And also because it's a nice pastime making fun of this loser!
     - "Make an excuse and leave.":
-      - rishi says: Go away Natasha. We have a class to attend.
+      - rishi says normal_schooldress_saying: Go away Natasha. We have a class to attend.
+      - show rishi: normal_schooldress WITH CUT
       - natasha says: Don't you dare try an escape! You can't leave here until I allow you to, pimple-face!
       - show jolly: annoyed_schooldress WITH CUT FLIP
       - jolly says annoyed_schooldress: Hey! Don't call him that. Why are you teasing him?
@@ -68,6 +72,7 @@ start:
       - natasha says giggles_schooldress: And also because it's a nice pastime making fun of this loser!
     - "Take a stand.":
       - rishi says angry_schooldress: I’m not a loser! Don't call us that!
+      - show rishi: normal_schooldress WITH CUT
       - natasha says frowns_schooldress: Whoa! The loser has learned to talk back. I see. Maybe it's time to teach you a lesson, pimple-face!
       - show jolly: annoyed_schooldress WITH CUT FLIP
       - jolly says annoyed_schooldress: Hey! Don't call him that. Why are you teasing him?
@@ -83,9 +88,62 @@ start:
   - show rishi: sad_schooldress WITH CUT
   - text IN internalMonologue_Left_3lines: "I knew she'll make fun of my legs! She does that every time."
   - show rishi: normal_schooldress WITH CUT
-  - natasha says laughing_schooldress: "And look at your chest! It's a jungle out there/it's flatter than my LED TV."
+  - natasha says laughing_schooldress: "And look at your chest! It's a jungle out there."
   - show natasha: normal_schooldress WITH CUT
   - show rishi: fearful_schooldress WITH CUT
   - text IN internalMonologue_Left_2lines: That's a new one! Why am I like this?
   - show rishi: normal_schooldress WITH CUT
   - natasha says laughing_schooldress: You are some creature, pimple-face. You make me wonder whether you're supposed to be a chimpanzee and somehow turned into a boy!
+  - show natasha: normal_schooldress WITH CUT
+  - jolly says angry_schooldress: That's enough! Stop being so damn mean to him. Leave us alone!
+  - natasha says laughing_schooldress: Yeah, yeah! My quota, for now, is done. Until next time, pimple-face!
+  - show jolly:  normal_schooldress WITH CUT
+  - show natasha: laughing_schooldress WITH CUT FLIP
+  - show natasha: laughing_schooldress AT OUTRIGHT WITH MOVE
+  - wait: 300
+  - show jolly: normal_schooldress WITH CUT FLIP
+  - jolly says neutral_schooldress: Are you alright?
+  - rishi says sad_schooldress: "Yes... I'm okay!"
+  - jolly says: Come on, dude! Don't pay too much heed to that spoiled brat!
+  - rishi says normal_schooldress: Yeah.
+  - jolly says normal_schooldress: Come on, let it go!
+  - rishi says normal_schooldress: Hmmm.
+  - hide school_corridor: WITH FADE
+  - hide jolly: WITH CUT
+  - hide rishi: WITH CUT
+  # Scene 2 starts here
+scene02:
+  - show school_gate: WITH FADE
+  - show jolly: normal_schoolbag WITH FADE AT RIGHT
+  - show rishi: normal_schoolbag with FADE AT LEFT
+  - jolly says happy_schoolbag: So, I'll see you tomorrow then?
+  - rishi says sad_schoolbag: Yes.
+  - jolly says neutral_schoolbag: You're still thinking about what she said? Come on, I told you to forget it.
+  - rishi says sad_schoolbag: I will.
+  - jolly says normal_schoolbag: Just don't think about it too much, okay?
+  - rishi says neutral_schoolbag: Hmmm.
+  - jolly says neutral_schoolbag: Okay, see you then.
+  - rishi says normal_schoolbag: Bye.
+  - hide school_gate: WITH FADE
+  - hide jolly: WITH CUT
+  - hide rishi: WITH CUT
+  #scene 3 starts here
+scene03:
+  - show rishi_building_ext_evening: WITH FADE
+  - show tap_gesture: AT 960,157 WITH FADE
+  - animate tap_gesture:
+    spritesheet: loop LOOPED
+  - wait: click
+  - text IN captionBoxSmall: Rishi’s Apartment Building
+  - hide tap_gesture:
+  - scene: scene04
+scene04:
+  - show rishi_bedroom_evening: WITH FADE
+  - show tap_gesture: AT 960,157 WITH FADE
+  - animate tap_gesture:
+    spritesheet: loop LOOPED
+  - wait: click
+  - hide tap_gesture:
+  - show rishi: sad_payjama AT OFFCENTER-LEFT WITH FADE
+  - text IN internalMonologue_OffcenterLeft: Why am I so ugly and weird?
+  - text IN internalMonologue_OffcenterLeft_3lines: My face is full of pimples, my legs are becoming like street poles, hair coming out of every wrong place; I am a mess.
