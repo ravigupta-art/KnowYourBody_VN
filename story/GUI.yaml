@@ -217,6 +217,91 @@ config:
           align: center
           wordWrap: true
           wordWrapWidth: '700'
+    - id: internalMonologue_OffcenterLeft
+      type: messageBox
+      asset: asset4
+      x: '750'
+      'y': '22'
+      sfx: none
+      text:
+        x: 200
+        'y': 138
+        lineSpacing: 0
+        style:
+          font: Inter-Regular
+          fontSize: 36px
+          fill: '#FFFFFF'
+          align: center
+          wordWrap: true
+          wordWrapWidth: '700'
+    - id: internalMonologue_OffcenterLeft_2lines
+      type: messageBox
+      asset: asset4
+      x: '750'
+      'y': '22'
+      sfx: none
+      text:
+        x: 200
+        'y': 116
+        lineSpacing: 0
+        style:
+          font: Inter-Regular
+          fontSize: 36px
+          fill: '#FFFFFF'
+          align: center
+          wordWrap: true
+          wordWrapWidth: '700'
+    - id: internalMonologue_OffcenterLeft_3lines
+      type: messageBox
+      asset: asset4
+      x: '750'
+      'y': '22'
+      sfx: none
+      text:
+        x: 200
+        'y': 88
+        lineSpacing: 0
+        style:
+          font: Inter-Regular
+          fontSize: 36px
+          fill: '#FFFFFF'
+          align: center
+          wordWrap: true
+          wordWrapWidth: '700'
+    - id: internalMonologue_OffcenterLeft_4lines
+      type: messageBox
+      asset: asset4
+      x: '750'
+      'y': '22'
+      sfx: none
+      text:
+        x: 200
+        'y': 67
+        lineSpacing: 0
+        style:
+          font: Inter-Regular
+          fontSize: 36px
+          fill: '#FFFFFF'
+          align: center
+          wordWrap: true
+          wordWrapWidth: '700'
+    - id: internalMonologue_OffcenterLeft_5lines
+      type: messageBox
+      asset: asset4
+      x: '750'
+      'y': '22'
+      sfx: none
+      text:
+        x: 200
+        'y': 45
+        lineSpacing: 0
+        style:
+          font: Inter-Regular
+          fontSize: 36px
+          fill: '#FFFFFF'
+          align: center
+          wordWrap: true
+          wordWrapWidth: '700'
     - id: internalMonologue_Right
       type: messageBox
       asset: asset5
