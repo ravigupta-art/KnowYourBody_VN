@@ -5,6 +5,11 @@ backgrounds:
   school_corridor: assets/backgrounds/School_Corridor_VN.jpg
   table_clock_9_30: assets/backgrounds/Table_clock_time_9-30pm.jpg
   table_clock_10: assets/backgrounds/Table_clock_Time_10-00pm.jpg
+  rishi_building_ext_morning: assets/backgrounds/Apartment_building_morning.jpg
+  rishi_building_ext_evening: assets/backgrounds/Apartment_building_evening.jpg
+  rishi_building_ext_night: assets/backgrounds/Apartment_building_night.jpg
+  rishi_bedroom_evening: assets/backgrounds/bedroom_evening.jpg
+  rishi_bedroom_night: assets/backgrounds/bedroom_night.jpg
 
 characters:
   jolly:
@@ -41,6 +46,7 @@ characters:
       thoughtful: assets/characters/Mom/mom_thoughtful.png
   natasha:
     displayName: Natasha
+    nameBox: nameBoxRight
     color: "#243C2C"
     looks:
       angry_schooldress: assets/characters/Natasha/natasha_normal_in_schooldress_angry.png
