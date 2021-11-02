@@ -387,6 +387,57 @@ config:
           align: center
           wordWrap: true
           wordWrapWidth: '700'
+    - id: captionBoxSmall
+      type: messageBox
+      asset: asset20
+      x: '112'
+      'y': '72'
+      sfx: none
+      text:
+        x: 50
+        'y': 36
+        lineSpacing: 0
+        style:
+          font: Inter-Regular
+          fontSize: 36px
+          fill: '#FFFFFF'
+          align: left
+          wordWrap: true
+          wordWrapWidth: '521'
+    - id: captionBoxMedium
+      type: messageBox
+      asset: asset21
+      x: '112'
+      'y': '72'
+      sfx: none
+      text:
+        x: 50
+        'y': 36
+        lineSpacing: 0
+        style:
+          font: Inter-Regular
+          fontSize: 36px
+          fill: '#FFFFFF'
+          align: left
+          wordWrap: true
+          wordWrapWidth: '767'
+    - id: captionBoxLarge
+      type: messageBox
+      asset: asset22
+      x: '112'
+      'y': '72'
+      sfx: none
+      text:
+        x: 50
+        'y': 36
+        lineSpacing: 0
+        style:
+          font: Inter-Regular
+          fontSize: 36px
+          fill: '#FFFFFF'
+          align: left
+          wordWrap: true
+          wordWrapWidth: '920'
     - id: default
       type: nameBox
       asset: asset2
@@ -450,6 +501,15 @@ assets:
     asset5:
       name: asset5
       fileName: InternalMonologue_Right.png
+    asset20:
+      name: asset20
+      fileName: captionBoxSmall.png
+    asset21:
+      name: asset21
+      fileName: captionBoxMedium.png
+    asset22:
+      name: asset22
+      fileName: captionBoxLarge.png
     asset11:
       name: asset11
       fileName: loaderasset11.jpg
