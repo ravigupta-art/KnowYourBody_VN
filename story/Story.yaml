@@ -1,13 +1,18 @@
 start:
+  # Intializing Score
+  - var score: 0
+  # Starting story
   - show school_gate: WITH FADE CONTINUE
-  - show rishi: thinking_schooldress WITH CUT AT EXTREME-LEFT
-  - text IN internalMonologue_ExtremeLeft_4lines: "Oh no! \n Natasha is the last person I wanted to bump into today. How do I avoid her now?"
-  - show jolly: normal_schooldress WITH CUT AT EXTREME-RIGHT
-  - text IN internalMonologue_ExtremeRight_4lines: "Oh no! \n Natasha is the last person I wanted to bump into today. How do I avoid her now?"
+  # - show rishi: thinking_schooldress WITH CUT AT EXTREME-LEFT
+  # - text IN internalMonologue_ExtremeLeft_4lines: "Oh no! \n Natasha is the last person I wanted to bump into today. How do I avoid her now?"
+  # - show jolly: normal_schooldress WITH CUT AT EXTREME-RIGHT
+  # - text IN internalMonologue_ExtremeRight_4lines: "Oh no! \n Natasha is the last person I wanted to bump into today. How do I avoid her now?"
+  # Showing caption box as a CG
   - show caption_box_01: AT 421,127 WITH CUT
   - show tap_gesture: AT 960,157 WITH FADE
   - animate tap_gesture:
     spritesheet: loop LOOPED
+  # Adding wait click to scene.
   - wait: click
   - hide tap_gesture:
   - hide caption_box_01: WITH CUT
@@ -27,10 +32,10 @@ start:
   - rishi says sarcastic_schooldress: Hahaha. When will you learn to crack some quality jokes?
   - wait: 100
   - show rishi: normal_schooldress WITH CUT
-  - jolly says pretentious_schooldress:  What are you saying, dude? I crack quality jokes all the time.
+  - jolly says pretentious_schooldress: What are you saying, dude? I crack quality jokes all the time.
   - wait: 50
   - show jolly: normal_schooldress WITH CUT
-  - rishi says sarcastic_schooldress:   If you say so.
+  - rishi says sarcastic_schooldress: If you say so.
   - wait: 200
   - show rishi: normal_schooldress WITH CUT
   - show jolly: normal_schooldress AT CENTER WITH MOVE
@@ -40,11 +45,8 @@ start:
   - wait: 200
   - show natasha: normal_schooldress WITH CUT
   - show rishi: thinking_schooldress WITH CUT
-  - text IN internalMonologue_Left: "Oh no! \n Natasha is the last person I wanted to bump into today. How do I avoid her now?"
-  # - rishi says thinking_schooldress: (Internal monologue) Oh no! Natasha is the last person I wanted to bump into today. How do I avoid her now?
-  #- show rishi_internal_monologue_01: AT 860,257 WITH CUT
-  #- wait: CLICK
-  #- hide rishi_internal_monologue_01:
+  - text IN internalMonologue_Left_4lines: "Oh no! \n Natasha is the last person I wanted to bump into today. How do I avoid her now?"
+  - show rishi: normal_schooldress WITH CUT
   - choice:
     - "Say 'Hi' to Natasha!":
       - rishi says normal_schooldress_saying: Hi Natasha! How was the summer break?
@@ -54,9 +56,36 @@ start:
       - wait: 200
       - show natasha: normal_schooldress WITH CUT
       - show jolly: annoyed_schooldress WITH CUT FLIP
-      - jolly says annoyed_schooldress: Hey! Don't call him/her that. Why are you being so mean to him/her?
+      - jolly says annoyed_schooldress: Hey! Don't call him that. Why are you being so mean to him?
+      - natasha says happy_schooldress: Because he's a sore sight for my eyes!
+      - natasha says giggles_schooldress: And also because it's a nice pastime making fun of this loser!
     - "Make an excuse and leave.":
       - rishi says: Go away Natasha. We have a class to attend.
       - natasha says: Don't you dare try an escape! You can't leave here until I allow you to, pimple-face!
+      - show jolly: annoyed_schooldress WITH CUT FLIP
+      - jolly says annoyed_schooldress: Hey! Don't call him that. Why are you teasing him?
+      - natasha says happy_schooldress: Because he's a sore sight for my eyes!
+      - natasha says giggles_schooldress: And also because it's a nice pastime making fun of this loser!
     - "Take a stand.":
-      - rishi says: I’m not a loser! Don't call us that!
+      - rishi says angry_schooldress: I’m not a loser! Don't call us that!
+      - natasha says frowns_schooldress: Whoa! The loser has learned to talk back. I see. Maybe it's time to teach you a lesson, pimple-face!
+      - show jolly: annoyed_schooldress WITH CUT FLIP
+      - jolly says annoyed_schooldress: Hey! Don't call him that. Why are you teasing him?
+      - natasha says happy_schooldress: Because he's a sore sight for my eyes!
+      - natasha says giggles_schooldress: And also because it's a nice pastime making fun of this loser!
+  - show jolly: normal_schooldress WITH CUT
+  - show natasha: normal_schooldress WITH CUT
+  - show rishi: thinking_schooldress WITH CUT
+  - text IN internalMonologue_Left_2lines: "This is so upsetting. \n I hate her."
+  - show rishi: normal_schooldress WITH CUT
+  - natasha says attitude_schooldress: "So, Mr. Loser, what are you going to do with those ridiculously long legs?"
+  - show natasha: normal_schooldress WITH CUT
+  - show rishi: sad_schooldress WITH CUT
+  - text IN internalMonologue_Left_3lines: "I knew she'll make fun of my legs! She does that every time."
+  - show rishi: normal_schooldress WITH CUT
+  - natasha says laughing_schooldress: "And look at your chest! It's a jungle out there/it's flatter than my LED TV."
+  - show natasha: normal_schooldress WITH CUT
+  - show rishi: fearful_schooldress WITH CUT
+  - text IN internalMonologue_Left_2lines: That's a new one! Why am I like this?
+  - show rishi: normal_schooldress WITH CUT
+  - natasha says laughing_schooldress: You are some creature, pimple-face. You make me wonder whether you're supposed to be a chimpanzee and somehow turned into a boy!
