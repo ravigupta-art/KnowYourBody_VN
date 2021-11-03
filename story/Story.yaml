@@ -147,3 +147,14 @@ scene04:
   - show rishi: sad_payjama AT OFFCENTER-LEFT WITH FADE
   - text IN internalMonologue_OffcenterLeft: Why am I so ugly and weird?
   - text IN internalMonologue_OffcenterLeft_3lines: My face is full of pimples, my legs are becoming like street poles, hair coming out of every wrong place; I am a mess.
+  - text IN internalMonologue_OffcenterLeft: I'll always be a laughing stock for people.
+  - text IN internalMonologue_OffcenterLeft: How will I change all this?
+  - choice:
+    - "Just accept how you look, flaws and everything.":
+      - show rishi: thinking_payjama WITH CUT
+      - text in internalMonologue_OffcenterLeft_2lines:  I shouldn't think like that. I should accept how I look.
+      - text in internalMonologue_OffcenterLeft_2lines:  But how am I going to handle all the trash talk I'llhave to face?
+      - show rishi: neutral_payjama WITH CUT
+      - text in internalMonologue_OffcenterLeft_2lines: No, I will do something about it. I can't just accept people making fun of me.
+    - "Agree With Natasha":
+    - "Decide to do something about your appearance.":
