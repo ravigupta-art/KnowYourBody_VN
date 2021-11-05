@@ -33,6 +33,7 @@ characters:
       wicked_schoolbag: assets/characters/Jolly/Jolly_In_SchoolDress_With_SchoolBag_WickedSmile.png
   mom:
     displayName: Mom
+    nameBox: nameBoxRight
     color: "#243C2C"
     looks:
       normal: assets/characters/Mom/mom_normal.png

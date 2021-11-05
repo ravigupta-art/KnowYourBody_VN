@@ -1,4 +1,5 @@
 start:
+  - scene: scene05
   # Intializing Score
   - var score: 0
   # Starting story
@@ -17,7 +18,6 @@ start:
   # Adding wait click to scene.
   - hide tap_gesture:
   # - hide caption_box_01: WITH CUT
-  - scene: scene03
   - show school_corridor: WITH FADETOBG CONTINUE
   - wait: 100
   - show rishi: normal_schooldress AT OUTLEFT WITH FADE
@@ -152,9 +152,53 @@ scene04:
   - choice:
     - "Just accept how you look, flaws and everything.":
       - show rishi: thinking_payjama WITH CUT
-      - text in internalMonologue_OffcenterLeft_2lines:  I shouldn't think like that. I should accept how I look.
-      - text in internalMonologue_OffcenterLeft_2lines:  But how am I going to handle all the trash talk I'llhave to face?
+      - text IN internalMonologue_OffcenterLeft_2lines:  I shouldn't think like that. I should accept how I look.
+      - text IN internalMonologue_OffcenterLeft_2lines:  But how am I going to handle all the trash talk I'llhave to face?
       - show rishi: neutral_payjama WITH CUT
-      - text in internalMonologue_OffcenterLeft_2lines: No, I will do something about it. I can't just accept people making fun of me.
+      - text IN internalMonologue_OffcenterLeft_2lines: No, I will do something about it. I can't just accept people making fun of me.
     - "Agree With Natasha":
+      - show rishi: thinking_payjama WITH CUT
+      - text IN internalMonologue_OffcenterLeft: Natasha's right. I'll always be a loser.
+      - text IN internalMonologue_OffcenterLeft_2lines: How am I going to handle all the trash talk I'll have to face?
+      - show rishi: neutral_payjama WITH CUT
+      - text IN internalMonologue_OffcenterLeft_2lines: No, I will do something about it. I can't just accept people making fun of me.
     - "Decide to do something about your appearance.":
+      - show rishi: neutral_payjama WITH CUT
+      - text IN internalMonologue_OffcenterLeft_2lines: No, I will do something about it. I can't just accept people making fun of me.
+scene05:
+  - show mom: normal AT OUTRIGHT WITH CUT
+  - show mom: normal AT OFFCENTER-RIGHT WITH MOVE
+  - show rishi: normal_payjama WITH CUT
+  - wait: 700
+  - mom says curious: I've been calling you for dinner for the past ten minutes. Why didn’t you answer?
+  - rishi says sad_payjama_saying: Sorry, mom. Didn't hear you.
+  - show rishi: sad_payjama WITH CUT
+  - mom says thoughtful: What happened, beta? Is something bothering you?
+  - rishi says sad_payjama: It's just… It’s okay. You won't understand.
+  - mom says smirks: Hey, you're forgetting. I was also your age once.
+  - rishi says surprised_payjama: How did you know it was related to my age?
+  - show rishi: normal_payjama WITH CUT
+  - wait: 600
+  - mom says smirks: Hey, who's the mom here, huh?
+  - mom says sarcastic: Now, will you tell me what's eating you up?
+  - show mom: smirks WITH CUT
+  - rishi says sad_payjama_saying: It's this girl at school, Natasha. She's really mean.
+  - show rishi: sad_payjama WITH CUT
+  - wait: 800
+  - mom says curious: What did she do?
+  - rishi says fearful_payjama_saying: She made fun of my pimples.
+  - show rishi: fearful_payjama WITH CUT
+  - mom says normal: And that's bothering you? Don't worry, beta. Pimples are common in this age.
+  - rishi says sad_payjama_saying: Then how come others don't get them?
+  - show rishi: sad_payjama WITH CUT
+  - wait: 800
+  - mom says neutral: It's not true. Everyone gets them.
+  - rishi says fearful_payjama: Did you?
+  - mom says normal: Of course. My face was always full of it. You can ask your nani.
+  - rishi says surprised_payjama: Whoa! You've got such great skin and you're saying you had pimples?
+  - mom says neutral: That's the point I'm trying to make. It will go away when your hormones calm down.
+  - mom says smirks: And if anyone makes fun of you because of that, ignore them. If they become too mean, you can just tell them that it’ll be their turn soon!
+  - rishi says sad_payjama: But Natasha also…
+  - wait: 1000
+  - mom shocked: Natasha also what?
+  - rishi fearful_payjama: She also made fun of my chest hair/flat chest. She said it’s a jungle out there/it's flatter than a LED TV.
