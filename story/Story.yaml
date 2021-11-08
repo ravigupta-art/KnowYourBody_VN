@@ -1,5 +1,5 @@
 start:
-  - scene: scene05
+  - scene: scene06
   # Intializing Score
   - var score: 0
   # Starting story
@@ -108,9 +108,10 @@ start:
   - rishi says normal_schooldress: Yeah.
   - jolly says normal_schooldress: Come on, let it go!
   - rishi says normal_schooldress: Hmmm.
-  - hide school_corridor: WITH FADE
   - hide jolly: WITH CUT
   - hide rishi: WITH CUT
+  - hide school_corridor: WITH FADE
+  - scene: scene02
   # Scene 2 starts here
 scene02:
   - show school_gate: WITH FADE
@@ -124,9 +125,10 @@ scene02:
   - rishi says neutral_schoolbag: Hmmm.
   - jolly says neutral_schoolbag: Okay, see you then.
   - rishi says normal_schoolbag: Bye.
-  - hide school_gate: WITH FADE
   - hide jolly: WITH CUT
   - hide rishi: WITH CUT
+  - hide school_gate: WITH FADE
+  - scene: scene03
   #scene 3 starts here
 scene03:
   - show rishi_building_ext_evening: WITH FADE
@@ -165,7 +167,6 @@ scene04:
     - "Decide to do something about your appearance.":
       - show rishi: neutral_payjama WITH CUT
       - text IN internalMonologue_OffcenterLeft_2lines: No, I will do something about it. I can't just accept people making fun of me.
-scene05:
   - show mom: normal AT OUTRIGHT WITH CUT
   - show mom: normal AT OFFCENTER-RIGHT WITH MOVE
   - show rishi: normal_payjama WITH CUT
@@ -200,5 +201,144 @@ scene05:
   - mom says smirks: And if anyone makes fun of you because of that, ignore them. If they become too mean, you can just tell them that it’ll be their turn soon!
   - rishi says sad_payjama: But Natasha also…
   - wait: 1000
-  - mom shocked: Natasha also what?
-  - rishi fearful_payjama: She also made fun of my chest hair/flat chest. She said it’s a jungle out there/it's flatter than a LED TV.
+  - mom says shocked: Natasha also what?
+  - rishi says fearful_payjama: She also made fun of my chest hair/flat chest. She said it’s a jungle out there/it's flatter than a LED TV.
+  - mom says thoughtful: This Natasha girl sounds really mean.
+  - rishi says normal_payjama: Yes, mom. She is. What should I do?
+  - mom says neutral: Don't bother yourself with all this. All these changes are happening due to puberty. Everyone goes through this. Some go through it early, some late. But everyone does.
+  - mom says neutral: It makes changes to your body. By the time it's through with you, you'll be alright, beta!
+  - rishi says fearful_payjama_saying: Really? I'll be alright?
+  - mom says happy: Oh you'll be more than alright. Don't forget how your mother looks!
+  - rishi says happy_payjama: Haha.
+  - mom says thoughtful: Are you feeling alright now?
+  - choice:
+    - "I think so.":
+      - show rishi: surprised_payjama WITH CUT
+      - text IN internalMonologue_OffcenterLeft_2lines: Whoa! It's a lot to process. But I’ve heard that word (bold)"puberty"(end) before somewhere.
+      - text IN internalMonologue_OffcenterLeft: Maybe I should look it up online.
+      - mom says normal: Now, let's go eat dinner. Your sister and father are waiting for us.
+      - rishi says normal_payjama: Okay, mom.
+      - show rishi: thinking_payjama WITH CUT
+      - text IN internalMonologue_OffcenterLeft:  I'll look that up after dinner then.
+    - "Maybe, a litte.":
+      - show rishi: surprised_payjama WITH CUT
+      - text IN internalMonologue_OffcenterLeft_2lines: Whoa! It's a lot to process. But I’ve heard that word (bold)"puberty"(end) before somewhere.
+      - text IN internalMonologue_OffcenterLeft: Maybe I should look it up online.
+      - mom says normal: Now, let's go eat dinner. Your sister and father are waiting for us.
+      - rishi says normal_payjama: Okay, mom.
+      - show rishi: thinking_payjama WITH CUT
+      - text IN internalMonologue_OffcenterLeft:  I'll look that up after dinner then.
+    - " I don't know, mom. It's very difficult to ignore such comments.":
+      - mom says happy: Don't worry, beta. You'll get over her comments. Don't forget there are more people who care about you than those who make fun of you.
+      - rishi says happy_payjama: Thanks, mom. I'll keep that in mind.
+      - show rishi: surprised_payjama WITH CUT
+      - text IN internalMonologue_OffcenterLeft_2lines: Whoa! It's a lot to process. But I’ve heard that word (bold)"puberty"(end) before somewhere.
+      - text IN internalMonologue_OffcenterLeft: Maybe I should look it up online.
+      - mom says normal: Now, let's go eat dinner. Your sister and father are waiting for us.
+      - rishi says normal_payjama: Okay, mom.
+      - show rishi: thinking_payjama WITH CUT
+      - text IN internalMonologue_OffcenterLeft:  I'll look that up after dinner then.
+  - hide rishi: WITH CUT
+  - hide mom: WITH CUT
+  - hide rishi_bedroom_evening: WITH FADE
+  - scene: scene05
+
+scene05:
+  - show table_clock_9_30: WITH FADE
+  - show tap_gesture: AT 960,157 WITH FADE
+  - animate tap_gesture:
+    spritesheet: loop LOOPED
+  - wait: click
+  - hide tap_gesture:
+  - show rishi_bedroom_night: WITH FADE
+  - show tap_gesture: AT 960,157 WITH FADE
+  - show rishi: thinking_payjama AT LEFT WITH FADE
+  - animate tap_gesture:
+    spritesheet: loop LOOPED
+  - wait: click
+  - hide tap_gesture:
+  - text IN internalMonologue_Left_2lines: Okay, let's look up puberty on the internet. Let's see what I can find.
+  - show rishi: normal_payjama WITH CUT
+  - show phone_ebook: AT 1240,750 WITH FADE
+  - text IN internalMonologue_Left_2lines: Oh, an e-book. Looks interesting. Should I read it?
+  - choice:
+    - "Read it.":
+      - text IN internalMonologue_Left_2lines: Yes, I'll read it. Looks like this book will give me a lot of clarity.
+    - "Ignore it.":
+      - text IN internalMonologue_Left: No, it'll take too long to read the book.
+      - text IN internalMonologue_Left_2lines: But what if it has some valuable info. Something that I can use against Natasha.
+      - show rishi: annoyed_payjama WITH CUT
+      - text IN internalMonologue_Left: Ughh! I'll have to read it after all.
+    - " Maybe Just scroll through it.":
+      - text IN internalMonologue_Left_2lines: Hmm. Let's just scroll through the pages for now.
+      - hide phone_ebook: WITH CUT
+      - show phone_ebook_scroll: AT 1240,750 WITH FADE
+      - animate phone_ebook_scroll:
+        spritesheet: loop LOOPED
+      - show tap_gesture: AT 960,157 WITH FADE
+      - animate tap_gesture:
+        spritesheet: loop LOOPED
+      - wait: click
+      - hide tap_gesture:
+      - hide phone_ebook_scroll:
+      - text IN internalMonologue_Left_2lines: Wait a minute! Did I just notice something about chest hair?
+      - text IN internalMonologue_Left: Looks like I'll have to read it after all.
+  - hide phone_ebook: WITH CUT
+  - hide rishi: WITH CUT
+  - show table_clock_10: WITH FADE
+  - show tap_gesture: AT 960,157 WITH FADE
+  - animate tap_gesture:
+    spritesheet: loop LOOPED
+  - wait: click
+  - hide tap_gesture:
+scene06:
+  - show rishi_bedroom_night: WITH FADE
+  - show rishi: surprised_payjama AT LEFT WITH FADE
+  - text IN internalMonologue_Left_2lines:  Wow what a powerhouse of knowledge on puberty! Thank god I read this book!
+  - show rishi: normal_payjama WITH CUT
+  - text IN internalMonologue_Left_2lines: So, chest hair can grow due to puberty.
+  - text IN internalMonologue_Left: Let's see what else I can find.
+  - show phone_video_start: AT 1240,750 WITH FADE
+  - text IN internalMonologue_Left_2lines: "   Oh, a video. Seems interesting. \n Let's watch it."
+  - hide phone_video_start: WITH CUT
+  - show phone_video_end: AT 1240,750 WITH FADE
+  - text IN internalMonologue_Left_2lines: Ohkay. That's strange! The video really contradicts the e-book!
+  - show rishi: fearful_payjama WITH CUT
+  - text IN internalMonologue_Left_2lines: " I'm so confused! \n Which one to believe?"
+  - show rishi: thinking_payjama WITH CUT
+  - text IN internalMonologue_Left_2lines: Wait a minute! The e-book had a 5-star rating but the video just has 10 likes.
+  - hide phone_video_end: WITH FADE
+  - choice:
+    - "Belive in video.":
+      - text IN internalMonologue_Left_2lines: "Yeah the video might have got fewer likes but it might be right!"
+    - "Believe the e-book.":
+      - text IN internalMonologue_Left_2lines: "Of course, the book's right! \n It's got a 5-star rating. What was I thinking?"
+    - "Stay sceptical of both.":
+      - text IN internalMonologue_Left_2lines: "Hmm. I can't trust either of them if \n they are so contradictory."
+  - text IN internalMonologue_Left_2lines: "Hmm. Let's see what else \n I can find on puberty!"
+  - show screen_good_design: AT 1245,750 WITH FADE
+  - show rishi: happy_payjama WITH CUT
+  - text IN internalMonologue_Left_2lines: Wow, this looks like a medical journal! So much info on puberty! I'm going to read this.
+  - text IN internalMonologue_Left_2lines: It says that teenagers having long legs is a sign of them growing up. That’s reassuring.
+  - show rishi: thinking_payjama WITH CUT
+  - text IN internalMonologue_Left: Now, let's check the other one.
+  - hide screen_good_design: WITH CUT
+  - show screen_bad_design: AT 1245,750 WITH FADE
+  - show rishi: happy_payjama WITH CUT
+  - text IN internalMonologue_Left_3lines: Wow, this is also full of information. Although the design can use a bit of improvement, it’s worth checking out I guess!
+  - show rishi: thinking_payjama WITH CUT
+  - text IN internalMonologue_Left_2lines: Hmm. It says having long legs might be a sign of some disorder in teenagers!
+  - show rishi: fearful_payjama WITH CUT
+  - text IN internalMonologue_Left_2lines: Again contradicting information! I'm so confused! Which one to believe?
+  - hide screen_bad_design: WITH CUT
+  - choice:
+    - "Believe the first website.":
+      - show rishi: normal_payjama WITH CUT
+      - text IN internalMonologue_Left_2lines: Yeah, the first website's got to be right. It's a medical journal for god's sake.
+    - "Believe the second one.":
+      - show rishi: thinking_payjama WITH CUT
+      - text IN internalMonologue_Left_2lines: "There's no reason \n the second one can't be right.""
+    - "Believe none of the two.":
+      - show rishi: thinking_payjama WITH CUT
+      - text IN internalMonologue_Left_2lines: Hmm. It’s difficult to believe anything these websites are saying. Such contradictory information!
+      

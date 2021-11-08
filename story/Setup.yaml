@@ -162,6 +162,15 @@ characters:
       sarcastic_schoolbag: assets/characters/Rishika/Rishika_with_schoolbag_sarcastic.png
       surprised_schoolbag: assets/characters/Rishika/Rishika_with_schoolbag_surprised.png
 cgs:
+  phone_ebook: assets/objects/phone_ebook.png
+  phone_ebook_scroll: 
+    spritesheet: assets/objects/phone_ebook_scroll.png 320 645
+    animations:
+      loop: 1 6 12
+  phone_video_start: assets/objects/phone_video_start.png
+  phone_video_end: assets/objects/phone_video_end.png
+  screen_good_design: assets/objects/screen_good_design.png
+  screen_bad_design: assets/objects/screen_bad_design.png
   phone1: assets/objects/mobileinhand_ebook.jpg
   phone2: assets/objects/mobileinhand_search_engine.jpg
   phone3: assets/objects/mobileinhand_video_thumbnail.jpg
