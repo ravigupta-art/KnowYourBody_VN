@@ -1,5 +1,4 @@
 start:
-  - scene: scene06
   # Intializing Score
   - var score: 0
   # Starting story
@@ -291,6 +290,7 @@ scene05:
     spritesheet: loop LOOPED
   - wait: click
   - hide tap_gesture:
+  - scene: scene06
 scene06:
   - show rishi_bedroom_night: WITH FADE
   - show rishi: surprised_payjama AT LEFT WITH FADE
@@ -337,8 +337,49 @@ scene06:
       - text IN internalMonologue_Left_2lines: Yeah, the first website's got to be right. It's a medical journal for god's sake.
     - "Believe the second one.":
       - show rishi: thinking_payjama WITH CUT
-      - text IN internalMonologue_Left_2lines: "There's no reason \n the second one can't be right.""
+      - text IN internalMonologue_Left_2lines: "There's no reason \n the second one can't be right."
     - "Believe none of the two.":
       - show rishi: thinking_payjama WITH CUT
       - text IN internalMonologue_Left_2lines: Hmm. It’s difficult to believe anything these websites are saying. Such contradictory information!
-      
+  - show rishi: annoyed_payjama WITH CUT
+  - text IN internalMonologue_Left_2lines:  "Ah. It’s late. \n I think I should go to sleep now."
+  - show rishi: thinking_payjama WITH CUT
+  - text IN internalMonologue_Left_2lines:  "I learned a few things about puberty today but what if Natasha makes fun of me again tomorrow?"
+  - choice:
+    - "“I’ll make fun of her too”.":
+      - text IN internalMonologue_ExtremeLeft_2lines:  I’ll find something about her that she’s uncomfortable with and make fun of it. Yeah, that should shut her up. Haha.
+    - "“I’ll avoid her so that she can’t find me”.":
+      - text IN internalMonologue_ExtremeLeft_2lines:  No! That can’t happen. I’ll avoid her the whole day so that she can’t find me.
+    - "“I’ll tell her that it’s a natural process”.":
+      - text IN internalMonologue_Left_2lines: I will tell her what Maa told me. It’s a natural process and soon it will be her turn.
+  - show rishi: annoyed_payjama WITH CUT
+  - text IN internalMonologue_Left_2lines:  Anyway, I will think about it later. Need to sleep now.
+  - hide rishi: WITH CUT
+  - scene: scene07
+#scene 07 starts here
+scene07:
+  - show school_gate: WITH FADE
+  - text IN captionBoxSmall: "The Next Morning..."
+  - show school_corridor: WITH FADE
+  - wait: 100
+  - show rishi: normal_schooldress AT LEFT WITH FADE
+  - show jolly: normal_schooldress AT RIGHT WITH FADE
+  - show tap_gesture: AT 960,157 WITH FADE
+  - animate tap_gesture:
+    spritesheet: loop LOOPED
+  - wait: click
+  - hide tap_gesture:
+  - jolly says happy_schooldress: Wow, you seem to be in a good mood, huh dude?
+  - rishi says happy_schooldress: Well, you're spot on with that assumption.
+  - jolly says: Well, I'm just glad that you've moved on from yesterday's incident.
+  - rishi says normal_schooldress_saying: Yeah, I was really sad but then my mom explained to me about puberty and then I looked it up online.
+  - show rishi: normal_schooldress WITH CUT
+  - jolly says happy_schooldress: Whoa! What did you find out?
+  - show jolly: normal_schooldress WITH CUT
+  - rishi says normal_schooldress: A lot of information. But the main point is this - if it is puberty, then everyone will go through the problems and the changes that I am going through.
+  - rishi says happy_schooldress:  So, why bother about them?
+  - rishi says happy_schooldress_saying: Did you get it?
+  - show rishi: normal_schooldress WITH CUT
+  - jolly says happy_schooldress: Not at all! But I'm happy that you've forgotten your long face at home!
+  - rishi says happy_schooldress: Hahaha. That's a good one!
+  - hide ALL: WITH FADE
