@@ -1,4 +1,5 @@
 start:
+  - scene: scene06
   # Intializing Score
   - var score: 0
   # Starting story
@@ -265,11 +266,13 @@ scene05:
   - choice:
     - "Read it.":
       - text IN internalMonologue_Left_2lines: Yes, I'll read it. Looks like this book will give me a lot of clarity.
+      - hide phone_ebook: WITH CUT
     - "Ignore it.":
       - text IN internalMonologue_Left: No, it'll take too long to read the book.
       - text IN internalMonologue_Left_2lines: But what if it has some valuable info. Something that I can use against Natasha.
       - show rishi: annoyed_payjama WITH CUT
       - text IN internalMonologue_Left: Ughh! I'll have to read it after all.
+      - hide phone_ebook: WITH CUT
     - " Maybe Just scroll through it.":
       - text IN internalMonologue_Left_2lines: Hmm. Let's just scroll through the pages for now.
       - hide phone_ebook: WITH CUT
@@ -284,7 +287,6 @@ scene05:
       - hide phone_ebook_scroll:
       - text IN internalMonologue_Left_2lines: Wait a minute! Did I just notice something about chest hair?
       - text IN internalMonologue_Left: Looks like I'll have to read it after all.
-  - hide phone_ebook: WITH CUT
   - hide rishi: WITH CUT
   - show table_clock_10: WITH FADE
   - show tap_gesture: AT 960,157 WITH FADE
@@ -293,6 +295,7 @@ scene05:
   - wait: click
   - hide tap_gesture:
   - scene: scene06
+
 scene06:
   - show rishi_bedroom_night: WITH FADE
   - show rishi: surprised_payjama AT LEFT WITH FADE

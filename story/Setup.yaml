@@ -172,6 +172,8 @@ cgs:
     spritesheet: assets/objects/TapGesture_spritesheet.png 200 200
     animations:
       loop: 1 18 12
+  screen_good_design: assets/objects/screen_good_design.png
+  screen_bad_design: assets/objects/screen_bad_design.png
 music:
   # rollingCredits: assets/audio/Evan_Schaeffer_-_01_-_Aqueduct.mp3
   # morningBGM: assets/audio/Evan_Schaeffer_-_03_-_Glow.mp3
