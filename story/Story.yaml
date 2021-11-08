@@ -17,6 +17,8 @@ start:
   # Adding wait click to scene.
   - hide tap_gesture:
   # - hide caption_box_01: WITH CUT
+  - scene: scene01
+scene01:
   - show school_corridor: WITH FADETOBG CONTINUE
   - wait: 100
   - show rishi: normal_schooldress AT OUTLEFT WITH FADE

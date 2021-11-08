@@ -1,4 +1,3 @@
-
 backgrounds:
   school_gate: assets/backgrounds/School_Exterior_Gate_VN.jpg
   school_building: assets/backgrounds/School_Exterior_VN.jpg
@@ -163,20 +162,12 @@ characters:
       surprised_schoolbag: assets/characters/Rishika/Rishika_with_schoolbag_surprised.png
 cgs:
   phone_ebook: assets/objects/phone_ebook.png
-  phone_ebook_scroll: 
+  phone_ebook_scroll:
     spritesheet: assets/objects/phone_ebook_scroll.png 320 645
     animations:
       loop: 1 6 12
   phone_video_start: assets/objects/phone_video_start.png
   phone_video_end: assets/objects/phone_video_end.png
-  screen_good_design: assets/objects/screen_good_design.png
-  screen_bad_design: assets/objects/screen_bad_design.png
-  phone1: assets/objects/mobileinhand_ebook.jpg
-  phone2: assets/objects/mobileinhand_search_engine.jpg
-  phone3: assets/objects/mobileinhand_video_thumbnail.jpg
-  phone4: assets/objects/mobileinhand_website.jpg
-  caption_box_01: assets/objects/caption_box_01.png
-  rishi_internal_monologue_01: assets/objects/Rishi_internalMonolgue_01.png
   tap_gesture:
     spritesheet: assets/objects/TapGesture_spritesheet.png 200 200
     animations:
@@ -194,3 +185,68 @@ extra:
     sakura: assets/ambient/sakura-petals.png 17 26
     snowflakes: assets/ambient/snowflakes.png 17 17
     snowflakes_large: assets/ambient/snowflakes_large.png 64 64
+
+# lazyloading:
+#   findAssets: true
+#   loadingScreen: false
+#   backgroundLoading: false
+#   episodes:
+#     - [start, scene01]
+#     - [scene02, scene03, scene04]
+#     - [scene05, scene06]
+#     - [scene07]
+#   assetsPerScene:
+#     start:
+#       school_gate: backgrounds
+#       school_building: backgrounds
+#       tap_gesture: cgs
+#     scene01:
+#       school_corridor: backgrounds
+#       school_gate: backgrounds
+#       tap_gesture: cgs
+#       rishi: characters
+#       jolly: characters
+#       rishika: characters
+#       preeti: characters
+#       natasha: characters
+#     scene02:
+#       school_gate: backgrounds
+#       tap_gesture: cgs
+#       rishi: characters
+#       jolly: characters
+#       rishika: characters
+#       preeti: characters
+#     scene03:
+#       rishi_building_ext_evening: backgrounds
+#       tap_gesture: cgs
+#     scene04:
+#       rishi_bedroom_evening: backgrounds
+#       tap_gesture: cgs
+#       rishi: characters
+#       rishika: characters
+#       mom: characters
+#     scene05:
+#       table_clock_9_30: backgrounds
+#       table_clock_10: backgrounds
+#       rishi_bedroom_night: backgrounds
+#       tap_gesture: cgs
+#       phone_ebook: cgs
+#       phone_ebook_scroll: cgs
+#       rishi: characters
+#       rishika: characters
+#     scene06:
+#       rishi_bedroom_night: backgrounds
+#       tap_gesture: cgs
+#       phone_video_start: cgs
+#       phone_video_end: cgs
+#       rishi: characters
+#       rishika: characters
+#     scene07:
+#       school_corridor: backgrounds
+#       school_gate: backgrounds
+#       tap_gesture: cgs
+#       rishi: characters
+#       jolly: characters
+#       rishika: characters
+#       preeti: characters
+#       natasha: characters
