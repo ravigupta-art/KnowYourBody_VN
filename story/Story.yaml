@@ -1,5 +1,4 @@
 start:
-  - scene: scene06
   # Intializing Score
   - var score: 0
   # Starting story
