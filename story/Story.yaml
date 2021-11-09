@@ -1,24 +1,13 @@
 start:
-  # Intializing Score
-  - var score: 0
-  # Starting story
   - show school_gate: WITH FADE CONTINUE
-  # - show rishi: thinking_schooldress WITH CUT AT EXTREME-LEFT
-  # - text IN internalMonologue_ExtremeLeft_4lines: "Oh no! \n Natasha is the last person I wanted to bump into today. How do I avoid her now?"
-  # - show jolly: normal_schooldress WITH CUT AT EXTREME-RIGHT
-  # - text IN internalMonologue_ExtremeRight_4lines: "Oh no! \n Natasha is the last person I wanted to bump into today. How do I avoid her now?"
-  # Showing caption box as a CG
-  # - show caption_box_01: AT 421,127 WITH CUT
   - show tap_gesture: AT 960,157 WITH FADE
   - animate tap_gesture:
     spritesheet: loop LOOPED
   - wait: click
   - text IN captionBoxSmall: Outside School Premises
-  # Adding wait click to scene.
   - hide tap_gesture:
-  # - hide caption_box_01: WITH CUT
-  - scene: scene01
-scene01:
+  - scene: sceneOne
+sceneOne:
   - show school_corridor: WITH FADETOBG CONTINUE
   - wait: 100
   - show rishi: normal_schooldress AT OUTLEFT WITH FADE
@@ -112,9 +101,8 @@ scene01:
   - hide jolly: WITH CUT
   - hide rishi: WITH CUT
   - hide school_corridor: WITH FADE
-  - scene: scene02
-  # Scene 2 starts here
-scene02:
+  - scene: sceneTwo
+sceneTwo:
   - show school_gate: WITH FADE
   - show jolly: normal_schoolbag WITH FADE AT RIGHT
   - show rishi: normal_schoolbag with FADE AT LEFT
@@ -129,9 +117,8 @@ scene02:
   - hide jolly: WITH CUT
   - hide rishi: WITH CUT
   - hide school_gate: WITH FADE
-  - scene: scene03
-  #scene 3 starts here
-scene03:
+  - scene: sceneThree
+sceneThree:
   - show rishi_building_ext_evening: WITH FADE
   - show tap_gesture: AT 960,157 WITH FADE
   - animate tap_gesture:
@@ -139,8 +126,8 @@ scene03:
   - wait: click
   - text IN captionBoxSmall: Rishi’s Apartment Building
   - hide tap_gesture:
-  - scene: scene04
-scene04:
+  - scene: sceneFour
+sceneFour:
   - show rishi_bedroom_evening: WITH FADE
   - show tap_gesture: AT 960,157 WITH FADE
   - animate tap_gesture:
@@ -242,9 +229,9 @@ scene04:
   - hide rishi: WITH CUT
   - hide mom: WITH CUT
   - hide rishi_bedroom_evening: WITH FADE
-  - scene: scene05
+  - scene: sceneFive
 
-scene05:
+sceneFive:
   - show table_clock_9_30: WITH FADE
   - show tap_gesture: AT 960,157 WITH FADE
   - animate tap_gesture:
@@ -293,9 +280,8 @@ scene05:
     spritesheet: loop LOOPED
   - wait: click
   - hide tap_gesture:
-  - scene: scene06
-
-scene06:
+  - scene: sceneSix
+sceneSix:
   - show rishi_bedroom_night: WITH FADE
   - show rishi: surprised_payjama AT LEFT WITH FADE
   - text IN internalMonologue_Left_2lines:  Wow what a powerhouse of knowledge on puberty! Thank god I read this book!
@@ -359,9 +345,8 @@ scene06:
   - show rishi: annoyed_payjama WITH CUT
   - text IN internalMonologue_Left_2lines:  Anyway, I will think about it later. Need to sleep now.
   - hide rishi: WITH CUT
-  - scene: scene07
-#scene 07 starts here
-scene07:
+  - scene: sceneSeven
+sceneSeven:
   - show school_gate: WITH FADE
   - text IN captionBoxSmall: "The Next Morning..."
   - show school_corridor: WITH FADE

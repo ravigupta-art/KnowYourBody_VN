@@ -9,7 +9,6 @@ backgrounds:
   rishi_building_ext_night: assets/backgrounds/Apartment_building_night.jpg
   rishi_bedroom_evening: assets/backgrounds/bedroom_evening.jpg
   rishi_bedroom_night: assets/backgrounds/bedroom_night.jpg
-
 characters:
   jolly:
     displayName: Jolly
@@ -175,80 +174,65 @@ cgs:
   screen_good_design: assets/objects/screen_good_design.png
   screen_bad_design: assets/objects/screen_bad_design.png
 music:
-  # rollingCredits: assets/audio/Evan_Schaeffer_-_01_-_Aqueduct.mp3
-  # morningBGM: assets/audio/Evan_Schaeffer_-_03_-_Glow.mp3
+  rollingCredits: assets/audio/Evan_Schaeffer_-_01_-_Aqueduct.mp3
+  morningBGM: assets/audio/Evan_Schaeffer_-_03_-_Glow.mp3
 sfx:
-  # ringtoneSFX: assets/audio/nokia6210-24-elise.mp3
-  # ringtoneSFX2: assets/audio/alcatel-top_secret.mp3
-
+  ringtoneSFX: assets/audio/nokia6210-24-elise.mp3
+  ringtoneSFX2: assets/audio/alcatel-top_secret.mp3
 extra:
   spritesheets:
     rain: assets/ambient/rain.png 17 17
     sakura: assets/ambient/sakura-petals.png 17 26
     snowflakes: assets/ambient/snowflakes.png 17 17
     snowflakes_large: assets/ambient/snowflakes_large.png 64 64
-
-# lazyloading:
-#   findAssets: true
-#   loadingScreen: false
-#   backgroundLoading: false
-#   episodes:
-#     - [start, scene01]
-#     - [scene02, scene03, scene04]
-#     - [scene05, scene06]
-#     - [scene07]
-#   assetsPerScene:
-#     start:
-#       school_gate: backgrounds
-#       school_building: backgrounds
-#       tap_gesture: cgs
-#     scene01:
-#       school_corridor: backgrounds
-#       school_gate: backgrounds
-#       tap_gesture: cgs
-#       rishi: characters
-#       jolly: characters
-#       rishika: characters
-#       preeti: characters
-#       natasha: characters
-#     scene02:
-#       school_gate: backgrounds
-#       tap_gesture: cgs
-#       rishi: characters
-#       jolly: characters
-#       rishika: characters
-#       preeti: characters
-#     scene03:
-#       rishi_building_ext_evening: backgrounds
-#       tap_gesture: cgs
-#     scene04:
-#       rishi_bedroom_evening: backgrounds
-#       tap_gesture: cgs
-#       rishi: characters
-#       rishika: characters
-#       mom: characters
-#     scene05:
-#       table_clock_9_30: backgrounds
-#       table_clock_10: backgrounds
-#       rishi_bedroom_night: backgrounds
-#       tap_gesture: cgs
-#       phone_ebook: cgs
-#       phone_ebook_scroll: cgs
-#       rishi: characters
-#       rishika: characters
-#     scene06:
-#       rishi_bedroom_night: backgrounds
-#       tap_gesture: cgs
-#       phone_video_start: cgs
-#       phone_video_end: cgs
-#       rishi: characters
-#       rishika: characters
-#     scene07:
-#       school_corridor: backgrounds
-#       school_gate: backgrounds
-#       tap_gesture: cgs
-#       rishi: characters
-#       jolly: characters
-#       rishika: characters
-#       preeti: characters
-#       natasha: characters
+lazyloading:
+  findAssets: false
+  loadingScreen: true
+  backgroundLoading: true
+  episodes:
+    - [start, sceneOne]
+    - [sceneTwo, sceneThree, sceneFour]
+    - [sceneFive, sceneSix]
+    - [sceneSeven]
+  assetsPerScene:
+    start:
+      school_gate: backgrounds
+      tap_gesture: cgs
+    sceneOne:
+      school_corridor: backgrounds
+      rishi: characters
+      jolly: characters
+      natasha: characters
+    sceneTwo:
+      school_gate: backgrounds
+      jolly: characters
+      rishi: characters
+    sceneThree:
+      rishi_building_ext_evening: backgrounds
+      tap_gesture: cgs
+    sceneFour:
+      rishi_bedroom_evening: backgrounds
+      tap_gesture: cgs
+      rishi: characters
+      mom: characters
+    sceneFive:
+      table_clock_9_30: backgrounds
+      tap_gesture: cgs
+      rishi_bedroom_night: backgrounds
+      rishi: characters
+      phone_ebook: cgs
+      phone_ebook_scroll: cgs
+      table_clock_10: backgrounds
+    sceneSix:
+      rishi_bedroom_night: backgrounds
+      rishi: characters
+      phone_video_start: cgs
+      phone_video_end: cgs
+      screen_good_design: cgs
+      screen_bad_design: cgs
+    sceneSeven:
+      school_gate: backgrounds
+      school_corridor: backgrounds
+      rishi: characters
+      jolly: characters
+      tap_gesture: cgs
