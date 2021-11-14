@@ -185,6 +185,7 @@ extra:
     sakura: assets/ambient/sakura-petals.png 17 26
     snowflakes: assets/ambient/snowflakes.png 17 17
     snowflakes_large: assets/ambient/snowflakes_large.png 64 64
+    confirmBtn: assets/gui/confirm.png 326 73
 lazyloading:
   findAssets: false
   loadingScreen: true
@@ -198,6 +199,7 @@ lazyloading:
     start:
       school_gate: backgrounds
       tap_gesture: cgs
+      confirmBtn: spritesheets
     sceneOne:
       school_corridor: backgrounds
       rishi: characters

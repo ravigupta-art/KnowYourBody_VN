@@ -10,6 +10,8 @@ start:
 sceneOne:
   - show school_corridor: WITH FADETOBG CONTINUE
   - wait: 100
+  - text IN captionBoxMedium: "Enter your name to continue:"
+  - call TextInput: name rishi Rishi
   - show rishi: normal_schooldress AT OUTLEFT WITH FADE
   - show jolly: normal_schooldress AT OUTRIGHT WITH FADE
   - wait: 100
