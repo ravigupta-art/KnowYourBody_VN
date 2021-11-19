@@ -11,154 +11,153 @@ backgrounds:
   rishi_bedroom_night: assets/backgrounds/bedroom_night.jpg
 characters:
   jolly:
-    displayName: Jolly
-    nameBox: nameBoxRight
+    displayName: Jolly #change name if needed
+    nameBox: nameBoxRight #remove this line of code if namebox is needed on left
     color: "#243C2C"
     looks:
-      normal_schooldress: assets/characters/Jolly/Jolly_In_SchoolDress_Normal.png
-      angry_schooldress: assets/characters/Jolly/Jolly_In_SchoolDress_Angry.png
-      annoyed_schooldress: assets/characters/Jolly/Jolly_In_SchoolDress_Annoyed.png
-      happy_schooldress: assets/characters/Jolly/Jolly_In_SchoolDress_Happy.png
-      neutral_schooldress: assets/characters/Jolly/Jolly_In_SchoolDress_Neutral.png
-      pretentious_schooldress: assets/characters/Jolly/Jolly_In_SchoolDress_Prententious.png
-      wicked_schooldress: assets/characters/Jolly/Jolly_In_SchoolDress_WickedSmile.png
-      normal_schoolbag: assets/characters/Jolly/Jolly_In_SchoolDress_With_SchoolBag_Normal.png
-      angry_schoolbag: assets/characters/Jolly/Jolly_In_SchoolDress_With_SchoolBag_Angry.png
-      annoyed_schoolbag: assets/characters/Jolly/Jolly_In_SchoolDress_With_SchoolBag_Annoyed.png
-      happy_schoolbag: assets/characters/Jolly/Jolly_In_SchoolDress_With_SchoolBag_Happy.png
-      neutral_schoolbag: assets/characters/Jolly/Jolly_In_SchoolDress_With_SchoolBag_Neutral.png
-      pretentious_schoolbag: assets/characters/Jolly/Jolly_In_SchoolDress_With_SchoolBag_Prententious.png
-      wicked_schoolbag: assets/characters/Jolly/Jolly_In_SchoolDress_With_SchoolBag_WickedSmile.png
+      angry_schooldress: assets/characters/jolly/jolly_angry_schooldress.png
+      angry_schooldress_schoolbag: assets/characters/jolly/jolly_angry_schooldress_schoolbag.png
+      annoyed_schooldress: assets/characters/jolly/jolly_annoyed_schooldress.png
+      annoyed_schooldress_schoolbag: assets/characters/jolly/jolly_annoyed_schooldress_schoolbag.png
+      happy_schooldress: assets/characters/jolly/jolly_happy_schooldress.png
+      happy_schooldress_schoolbag: assets/characters/jolly/jolly_happy_schooldress_schoolbag.png
+      neutral_schooldress: assets/characters/jolly/jolly_neutral_schooldress.png
+      neutral_schooldress_schoolbag: assets/characters/jolly/jolly_neutral_schooldress_schoolbag.png
+      normal_schooldress: assets/characters/jolly/jolly_normal_schooldress.png
+      normal_schooldress_schoolbag: assets/characters/jolly/jolly_normal_schooldress_schoolbag.png
+      pretentious_schooldress: assets/characters/jolly/jolly_pretentious_schooldress.png
+      pretentious_schooldress_schoolbag: assets/characters/jolly/jolly_pretentious_schooldress_schoolbag.png
+      wickedsmile_schooldress: assets/characters/jolly/jolly_wickedsmile_schooldress.png
+      wickedsmile_schooldress_schoolbag: assets/characters/jolly/jolly_wickedsmile_schooldress_schoolbag.png
   mom:
-    displayName: Mom
-    nameBox: nameBoxRight
+    displayName: Mom #change name if needed
+    nameBox: nameBoxRight #remove this line of code if namebox is needed on left
     color: "#243C2C"
     looks:
-      normal: assets/characters/Mom/mom_normal.png
-      annoyed: assets/characters/Mom/mom_annoyed.png
-      curious: assets/characters/Mom/mom_curious.png
-      happy: assets/characters/Mom/mom_happy.png
-      neutral: assets/characters/Mom/mom_neutral.png
-      sarcastic: assets/characters/Mom/mom_sarcastic.png
-      shocked: assets/characters/Mom/mom_shocked.png
-      smirks: assets/characters/Mom/mom_smirks.png
-      thoughtful: assets/characters/Mom/mom_thoughtful.png
+      curious_casual: assets/characters/mom/mom_curious_casual.png
+      happy_casual: assets/characters/mom/mom_happy_casual.png
+      neutral_casual: assets/characters/mom/mom_neutral_casual.png
+      normal_casual: assets/characters/mom/mom_normal_casual.png
+      sarcastic_casual: assets/characters/mom/mom_sarcastic_casual.png
+      shocked_casual: assets/characters/mom/mom_shocked_casual.png
+      smirk_casual: assets/characters/mom/mom_smirk_casual.png
+      thoughtful_casual: assets/characters/mom/mom_thoughtful_casual.png
+      mom_annoyed_casual: assets/characters/mom/mom_annoyed_casual.png
   natasha:
-    displayName: Natasha
-    nameBox: nameBoxRight
+    displayName: Natasha #change name if needed
+    nameBox: nameBoxRight #remove this line of code if namebox is needed on left
     color: "#243C2C"
     looks:
-      angry_schooldress: assets/characters/Natasha/natasha_normal_in_schooldress_angry.png
-      annoyed_schooldress: assets/characters/Natasha/natasha_normal_in_schooldress_annoyed.png
-      attitude_schooldress: assets/characters/Natasha/natasha_normal_in_schooldress_attitude.png
-      frowns_schooldress: assets/characters/Natasha/natasha_normal_in_schooldress_frowns.png
-      giggles_schooldress: assets/characters/Natasha/natasha_normal_in_schooldress_giggles.png
-      happy_schooldress: assets/characters/Natasha/natasha_normal_in_schooldress_happy.png
-      laughing_schooldress: assets/characters/Natasha/natasha_normal_in_schooldress_laughing.png
-      neutral_schooldress: assets/characters/Natasha/natasha_normal_in_schooldress_neutral.png
-      normal_schooldress: assets/characters/Natasha/natasha_normal_in_schooldress_normal.png
+      angry_schooldress: assets/characters/natasha/natasha_angry_schooldress.png
+      annoyed_schooldress: assets/characters/natasha/natasha_annoyed_schooldress.png
+      attitude_schooldress: assets/characters/natasha/natasha_attitude_schooldress.png
+      frowns_schooldress: assets/characters/natasha/natasha_frowns_schooldress.png
+      giggles_schooldress: assets/characters/natasha/natasha_giggles_schooldress.png
+      happy_schooldress: assets/characters/natasha/natasha_happy_schooldress.png
+      laughing_schooldress: assets/characters/natasha/natasha_laughing_schooldress.png
+      neutral_schooldress: assets/characters/natasha/natasha_neutral_schooldress.png
+      normal_schooldress: assets/characters/natasha/natasha_normal_schooldress.png
   preeti:
-    displayName: Preeti
+    displayName: Preeti #change name if needed
+    nameBox: nameBoxRight #remove this line of code if namebox is needed on left
     color: "#243C2C"
     looks:
-      normal_schooldress: assets/characters/Preeti/Preeti_with_schoolbag_normal.png
-      angry_schooldress: assets/characters/Preeti/Preeti_normal_in_schooldress_angry.png
-      annoyed_schooldress: assets/characters/Preeti/Preeti_normal_in_schooldress_annoyed.png
-      happy_schooldress: assets/characters/Preeti/Preeti_normal_in_schooldress_happy.png
-      neutral_schooldress: assets/characters/Preeti/Preeti_normal_in_schooldress_neutral.png
-      pretentious_schooldress: assets/characters/Preeti/Preeti_normal_in_schooldress_pretentious.png
-      wicked_schooldress: assets/characters/Preeti/Preeti_normal_in_schooldress_wickedsmile.png
-      normal_schoolbag: assets/characters/Preeti/Preeti_with_schoolbag_normal.png
-      angry_schoolbag: assets/characters/Preeti/Preeti_with_schoolbag_angry.png
-      annoyed_schoolbag: assets/characters/Preeti/Preeti_with_schoolbag_annoyed.png
-      happy_schoolbag: assets/characters/Preeti/Preeti_with_schoolbag_happy.png
-      neutral_schoolbag: assets/characters/Preeti/Preeti_with_schoolbag_neutral.png
-      pretentious_schoolbag: assets/characters/Preeti/Preeti_with_schoolbag_pretentious.png
-      wicked_schoolbag: assets/characters/Preeti/Preeti_with_schoolbag_wickedsmile.png
+      angry_schooldress: assets/characters/preeti/preeti_angry_schooldress.png
+      angry_schooldress_schoolbag: assets/characters/preeti/preeti_angry_schooldress_schoolbag.png
+      annoyed_schooldress: assets/characters/preeti/preeti_annoyed_schooldress.png
+      annoyed_schooldress_schoolbag: assets/characters/preeti/preeti_annoyed_schooldress_schoolbag.png
+      happy_schooldress: assets/characters/preeti/preeti_happy_schooldress.png
+      happy_schooldress_schoolbag: assets/characters/preeti/preeti_happy_schooldress_schoolbag.png
+      neutral_schooldress: assets/characters/preeti/preeti_neutral_schooldress.png
+      neutral_schooldress_schoolbag: assets/characters/preeti/preeti_neutral_schooldress_schoolbag.png
+      normal_schooldress: assets/characters/preeti/preeti_normal_schooldress.png
+      normal_schooldress_schoolbag: assets/characters/preeti/preeti_normal_schooldress_schoolbag.png
+      pretentious_schooldress: assets/characters/preeti/preeti_pretentious_schooldress.png
+      pretentious_schooldress_schoolbag: assets/characters/preeti/preeti_pretentious_schooldress_schoolbag.png
+      wickedsmile_schooldress: assets/characters/preeti/preeti_wickedsmile_schooldress.png
+      wickedsmile_schooldress_schoolbag: assets/characters/preeti/preeti_wickedsmile_schooldress_schoolbag.png
   rishi:
-    displayName: Rishi
+    displayName: Rishi #change name if needed
     color: "#243C2C"
     looks:
-      normal_payjama: assets/characters/Rishi/Rishi_normal_in_payjama_normal.png
-      angry_payjama: assets/characters/Rishi/Rishi_normal_in_payjama_angry.png
-      annoyed_payjama: assets/characters/Rishi/Rishi_normal_in_payjama_annoyed.png
-      fearful_payjama: assets/characters/Rishi/Rishi_normal_in_payjama_fearful.png
-      happy_payjama: assets/characters/Rishi/Rishi_normal_in_payjama_happy.png
-      neutral_payjama: assets/characters/Rishi/Rishi_normal_in_payjama_neutral.png
-      sad_payjama: assets/characters/Rishi/Rishi_normal_in_payjama_sad.png
-      sarcastic_payjama: assets/characters/Rishi/Rishi_normal_in_payjama_sarcastic.png
-      surprised_payjama: assets/characters/Rishi/Rishi_normal_in_payjama_surprised.png
-      normal_schooldress: assets/characters/Rishi/Rishi_normal_in_schooldress_normal.png
-      angry_schooldress: assets/characters/Rishi/Rishi_normal_in_schooldress_angry.png
-      annoyed_schooldress: assets/characters/Rishi/Rishi_normal_in_schooldress_annoyed.png
-      fearful_schooldress: assets/characters/Rishi/Rishi_normal_in_schooldress_fearful.png
-      happy_schooldress: assets/characters/Rishi/Rishi_normal_in_schooldress_happy.png
-      neutral_schooldress: assets/characters/Rishi/Rishi_normal_in_schooldress_neutral.png
-      sad_schooldress: assets/characters/Rishi/Rishi_normal_in_schooldress_sad.png
-      sarcastic_schooldress: assets/characters/Rishi/Rishi_normal_in_schooldress_sarcastic.png
-      surprised_schooldress: assets/characters/Rishi/Rishi_normal_in_schooldress_surprised.png
-      normal_payjama_saying: assets/characters/Rishi/Rishi_sayingsomethig_in_payjama_neutral.png
-      angry_payjama_saying: assets/characters/Rishi/Rishi_sayingsomethig_in_payjama_angry.png
-      fearful_payjama_saying: assets/characters/Rishi/Rishi_sayingsomethig_in_payjama_fearful.png
-      happy_payjama_saying: assets/characters/Rishi/Rishi_sayingsomethig_in_payjama_happy.png
-      neutral_payjama_saying: assets/characters/Rishi/Rishi_sayingsomethig_in_payjama_neutral.png
-      sad_payjama_saying: assets/characters/Rishi/Rishi_sayingsomethig_in_payjama_sad.png
-      angry_schooldress_saying: assets/characters/Rishi/Rishi_sayingsomething_in_schooldress_angry.png
-      happy_schooldress_saying: assets/characters/Rishi/Rishi_sayingsomething_in_schooldress_happy.png
-      normal_schooldress_saying: assets/characters/Rishi/Rishi_sayingsomething_in_schooldress_neutral.png
-      neutral_schooldress_saying: assets/characters/Rishi/Rishi_sayingsomething_in_schooldress_neutral.png
-      thinking_payjama: assets/characters/Rishi/Rishi_thinking_in_payjama.png
-      thinking_schooldress: assets/characters/Rishi/Rishi_thinking_in_schooldress.png
-      normal_schoolbag: assets/characters/Rishi/Rishi_with_schoolbag_normal.png
-      angry_schoolbag: assets/characters/Rishi/Rishi_with_schoolbag_angry.png
-      fearful_schoolbag: assets/characters/Rishi/Rishi_with_schoolbag_fearful.png
-      happy_schoolbag: assets/characters/Rishi/Rishi_with_schoolbag_happy.png
-      neutral_schoolbag: assets/characters/Rishi/Rishi_with_schoolbag_neutral.png
-      sad_schoolbag: assets/characters/Rishi/Rishi_with_schoolbag_sad.png
-      sarcastic_schoolbag: assets/characters/Rishi/Rishi_with_schoolbag_sarcastic.png
-      surprised_schoolbag: assets/characters/Rishi/Rishi_with_schoolbag_surprised.png
+      angry_payjama: assets/characters/rishi/rishi_angry_payjama.png
+      angry_payjama_saying: assets/characters/rishi/rishi_angry_payjama_saying.png
+      angry_schooldress: assets/characters/rishi/rishi_angry_schooldress.png
+      angry_schooldress_saying: assets/characters/rishi/rishi_angry_schooldress_saying.png
+      angry_schooldress_schoolbag: assets/characters/rishi/rishi_angry_schooldress_schoolbag.png
+      annoyed_payjama: assets/characters/rishi/rishi_annoyed_payjama.png
+      annoyed_schooldress: assets/characters/rishi/rishi_annoyed_schooldress.png
+      annoyed_schooldress_schoolbag: assets/characters/rishi/rishi_annoyed_schooldress_schoolbag.png
+      fearful_payjama: assets/characters/rishi/rishi_fearful_payjama.png
+      fearful_payjama_saying: assets/characters/rishi/rishi_fearful_payjama_saying.png
+      fearful_schooldress: assets/characters/rishi/rishi_fearful_schooldress.png
+      fearful_schooldress_schoolbag: assets/characters/rishi/rishi_fearful_schooldress_schoolbag.png
+      happy_payjama: assets/characters/rishi/rishi_happy_payjama.png
+      happy_payjama_saying: assets/characters/rishi/rishi_happy_payjama_saying.png
+      happy_schooldress: assets/characters/rishi/rishi_happy_schooldress.png
+      happy_schooldress_saying: assets/characters/rishi/rishi_happy_schooldress_saying.png
+      happy_schooldress_schoolbag: assets/characters/rishi/rishi_happy_schooldress_schoolbag.png
+      neutral_payjama: assets/characters/rishi/rishi_neutral_payjama.png
+      neutral_payjama_saying: assets/characters/rishi/rishi_neutral_payjama_saying.png
+      neutral_schooldress: assets/characters/rishi/rishi_neutral_schooldress.png
+      neutral_schooldress_schoolbag: assets/characters/rishi/rishi_neutral_schooldress_schoolbag.png
+      normal_payjama: assets/characters/rishi/rishi_normal_payjama.png
+      normal_payjama_thinking: assets/characters/rishi/rishi_normal_payjama_thinking.png
+      normal_schooldress: assets/characters/rishi/rishi_normal_schooldress.png
+      normal_schooldress_saying: assets/characters/rishi/rishi_normal_schooldress_saying.png
+      normal_schooldress_schoolbag: assets/characters/rishi/rishi_normal_schooldress_schoolbag.png
+      normal_schooldress_thinking: assets/characters/rishi/rishi_normal_schooldress_thinking.png
+      sad_payjama: assets/characters/rishi/rishi_sad_payjama.png
+      sad_payjama_saying: assets/characters/rishi/rishi_sad_payjama_saying.png
+      sad_schooldress: assets/characters/rishi/rishi_sad_schooldress.png
+      sad_schooldress_schoolbag: assets/characters/rishi/rishi_sad_schooldress_schoolbag.png
+      sarcastic_payjama: assets/characters/rishi/rishi_sarcastic_payjama.png
+      sarcastic_schooldress: assets/characters/rishi/rishi_sarcastic_schooldress.png
+      sarcastic_schooldress_schoolbag: assets/characters/rishi/rishi_sarcastic_schooldress_schoolbag.png
+      surprised_payjama: assets/characters/rishi/rishi_surprised_payjama.png
+      surprised_schooldress: assets/characters/rishi/rishi_surprised_schooldress.png
+      surprised_schooldress_schoolbag: assets/characters/rishi/rishi_surprised_schooldress_schoolbag.png
   rishika:
-    displayName: Rishika
+    displayName: Rishika #change name if needed
     color: "#243C2C"
     looks:
-      normal_payjama: assets/characters/Rishika/Rishika_normal_in_payjama.png
-      angry_payjama: assets/characters/Rishika/Rishika_normal_in_payjama_angry.png
-      annoyed_payjama: assets/characters/Rishika/Rishika_normal_in_payjama_annoyed.png
-      fearful_payjama: assets/characters/Rishika/Rishika_normal_in_payjama_fearful.png
-      happy_payjama: assets/characters/Rishika/Rishika_normal_in_payjama_happy.png
-      neutral_payjama: assets/characters/Rishika/Rishika_normal_in_payjama_neutral.png
-      sad_payjama: assets/characters/Rishika/Rishika_normal_in_payjama_sad.png
-      sarcastic_payjama: assets/characters/Rishika/Rishika_normal_in_payjama_sarcastic.png
-      surprised_payjama: assets/characters/Rishika/Rishika_normal_in_payjama_surprised.png
-      normal_schooldress: assets/characters/Rishika/Rishika_normal_in_schooldress_normal.png
-      angry_schooldress: assets/characters/Rishika/Rishika_normal_in_schooldress_angry.png
-      annoyed_schooldress: assets/characters/Rishika/Rishika_normal_in_schooldress_annoyed.png
-      fearful_schooldress: assets/characters/Rishika/Rishika_normal_in_schooldress_fearful.png
-      happy_schooldress: assets/characters/Rishika/Rishika_normal_in_schooldress_happy.png
-      neutral_schooldress: assets/characters/Rishika/Rishika_normal_in_schooldress_neutral.png
-      sad_schooldress: assets/characters/Rishika/Rishika_normal_in_schooldress_sad.png
-      sarcastic_schooldress: assets/characters/Rishika/Rishika_normal_in_schooldress_sarcastic.png
-      surprised_schooldress: assets/characters/Rishika/Rishika_normal_in_schooldress_surprised.png
-      normal_payjama_saying: assets/characters/Rishika/Rishika_saynigsomethig_in_payjama_neutral.png
-      angry_payjama_saying: assets/characters/Rishika/Rishika_saynigsomethig_in_payjama_angry.png
-      fearful_payjama_saying: assets/characters/Rishika/Rishika_saynigsomethig_in_payjama_fearful.png
-      happy_payjama_saying: assets/characters/Rishika/Rishika_saynigsomethig_in_payjama_happy.png
-      neutral_payjama_saying: assets/characters/Rishika/Rishika_saynigsomethig_in_payjama_neutral.png
-      sad_payjama_saying: assets/characters/Rishika/Rishika_saynigsomethig_in_payjama_sad.png
-      angry_schooldress_saying: assets/characters/Rishika/Rishika_sayingsomething_in_schooldress_angry.png
-      happy_schooldress_saying: assets/characters/Rishika/Rishika_sayingsomething_in_schooldress_happy.png
-      normal_schooldress_saying: assets/characters/Rishika/Rishika_sayingsomething_in_schooldress_neutral.png
-      neutral_schooldress_saying: assets/characters/Rishika/Rishika_sayingsomething_in_schooldress_neutral.png
-      thinking_payjama: assets/characters/Rishika/Rishika_thinking_in_payjama.png
-      thinking_schooldress: assets/characters/Rishika/Rishika_thinking_in_schooldress.png
-      normal_schoolbag: assets/characters/Rishika/Rishika_with_schoolbag_normal.png
-      angry_schoolbag: assets/characters/Rishika/Rishika_with_schoolbag_angry.png
-      fearful_schoolbag: assets/characters/Rishika/Rishika_with_schoolbag_fearful.png
-      happy_schoolbag: assets/characters/Rishika/Rishika_with_schoolbag_happy.png
-      neutral_schoolbag: assets/characters/Rishika/Rishika_with_schoolbag_neutral.png
-      sad_schoolbag: assets/characters/Rishika/Rishika_with_schoolbag_sad.png
-      sarcastic_schoolbag: assets/characters/Rishika/Rishika_with_schoolbag_sarcastic.png
-      surprised_schoolbag: assets/characters/Rishika/Rishika_with_schoolbag_surprised.png
+      angry_payjama: assets/characters/rishika/rishika_angry_payjama.png
+      angry_payjama_saying: assets/characters/rishika/rishika_angry_payjama_saying.png
+      angry_schooldress: assets/characters/rishika/rishika_angry_schooldress.png
+      angry_schooldress_saying: assets/characters/rishika/rishika_angry_schooldress_saying.png
+      angry_schooldress_schoolbag: assets/characters/rishika/rishika_angry_schooldress_schoolbag.png
+      annoyed_payjama: assets/characters/rishika/rishika_annoyed_payjama.png
+      annoyed_schooldress: assets/characters/rishika/rishika_annoyed_schooldress.png
+      annoyed_schooldress_schoolbag: assets/characters/rishika/rishika_annoyed_schooldress_schoolbag.png
+      fearful_payjama: assets/characters/rishika/rishika_fearful_payjama.png
+      fearful_payjama_saying: assets/characters/rishika/rishika_fearful_payjama_saying.png
+      fearful_schooldress: assets/characters/rishika/rishika_fearful_schooldress.png
+      fearful_schooldress_schoolbag: assets/characters/rishika/rishika_fearful_schooldress_schoolbag.png
+      happy_payjama: assets/characters/rishika/rishika_happy_payjama.png
+      happy_payjama_saying: assets/characters/rishika/rishika_happy_payjama_saying.png
+      happy_schooldress: assets/characters/rishika/rishika_happy_schooldress.png
+      happy_schooldress_saying: assets/characters/rishika/rishika_happy_schooldress_saying.png
+      happy_schooldress_schoolbag: assets/characters/rishika/rishika_happy_schooldress_schoolbag.png
+      neutral_payjama: assets/characters/rishika/rishika_neutral_payjama.png
+      neutral_payjama_saying: assets/characters/rishika/rishika_neutral_payjama_saying.png
+      neutral_schooldress: assets/characters/rishika/rishika_neutral_schooldress.png
+      neutral_schooldress_saying: assets/characters/rishika/rishika_neutral_schooldress_saying.png
+      neutral_schooldress_schoolbag: assets/characters/rishika/rishika_neutral_schooldress_schoolbag.png
+      normal_payjama: assets/characters/rishika/rishika_normal_payjama.png
+      normal_payjama_thinking: assets/characters/rishika/rishika_normal_payjama_thinking.png
+      normal_schooldress: assets/characters/rishika/rishika_normal_schooldress.png
+      normal_schooldress_schoolbag: assets/characters/rishika/rishika_normal_schooldress_schoolbag.png
+      normal_schooldress_thinking: assets/characters/rishika/rishika_normal_schooldress_thinking.png
+      sad_payjama: assets/characters/rishika/rishika_sad_payjama.png
+      sad_payjama_saying: assets/characters/rishika/rishika_sad_payjama_saying.png
+      sad_schooldress: assets/characters/rishika/rishika_sad_schooldress.png
+      sad_schooldress_schoolbag: assets/characters/rishika/rishika_sad_schooldress_schoolbag.png
+      sarcastic_payjama: assets/characters/rishika/rishika_sarcastic_payjama.png
+      sarcastic_schooldress: assets/characters/rishika/rishika_sarcastic_schooldress.png
+      sarcastic_schooldress_schoolbag: assets/characters/rishika/rishika_sarcastic_schooldress_schoolbag.png
+      surprised_payjama: assets/characters/rishika/rishika_surprised_payjama.png
+      surprised_schooldress: assets/characters/rishika/rishika_surprised_schooldress.png
+      surprised_schooldress_schoolbag: assets/characters/rishika/rishika_surprised_schooldress_schoolbag.png
 cgs:
   phone_ebook: assets/objects/phone_ebook.png
   phone_ebook_scroll:

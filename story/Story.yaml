@@ -23,7 +23,7 @@ sceneOne:
   - jolly says normal_schooldress: Looks like you didn't enjoy your vacations.
   - rishi says normal_schooldress_saying: I did… Well, to some extent, but after a point, it was like the walls of my room were closing down.
   - show rishi: normal_schooldress WITH CUT
-  - jolly says wicked_schooldress: Well, what do you expect? It's your room; it's bound to behave weirdly.
+  - jolly says wickedsmile_schooldress: Well, what do you expect? It's your room; it's bound to behave weirdly.
   - rishi says sarcastic_schooldress: Hahaha. When will you learn to crack some quality jokes?
   - wait: 100
   - show rishi: normal_schooldress WITH CUT
@@ -39,7 +39,7 @@ sceneOne:
   - natasha says laughing_schooldress: Hey losers, what are you guys doing back at school? Lost your way?
   - wait: 200
   - show natasha: normal_schooldress WITH CUT
-  - show rishi: thinking_schooldress WITH CUT
+  - show rishi: normal_schooldress_thinking WITH CUT
   - text IN internalMonologue_Left_4lines: "Oh no! \n Natasha is the last person I wanted to bump into today. How do I avoid her now?"
   - show rishi: normal_schooldress WITH CUT
   - choice:
@@ -57,7 +57,7 @@ sceneOne:
     - "Make an excuse and leave.":
       - rishi says normal_schooldress_saying: Go away Natasha. We have a class to attend.
       - show rishi: normal_schooldress WITH CUT
-      - natasha says: Don't you dare try an escape! You can't leave here until I allow you to, pimple-face!
+      - natasha says angry_schooldress: Don't you dare try an escape! You can't leave here until I allow you to, pimple-face!
       - show jolly: annoyed_schooldress WITH CUT FLIP
       - jolly says annoyed_schooldress: Hey! Don't call him that. Why are you teasing him?
       - natasha says happy_schooldress: Because he's a sore sight for my eyes!
@@ -72,13 +72,13 @@ sceneOne:
       - natasha says giggles_schooldress: And also because it's a nice pastime making fun of this loser!
   - show jolly: normal_schooldress WITH CUT
   - show natasha: normal_schooldress WITH CUT
-  - show rishi: thinking_schooldress WITH CUT
-  - text IN internalMonologue_Left_2lines: "This is so upsetting. \n I hate her."
+  - show rishi: normal_schooldress_thinking WITH CUT
+  - text IN internalMonologue_Left: "This is so upsetting. I hate her."
   - show rishi: normal_schooldress WITH CUT
   - natasha says attitude_schooldress: "So, Mr. Loser, what are you going to do with those ridiculously long legs?"
   - show natasha: normal_schooldress WITH CUT
   - show rishi: sad_schooldress WITH CUT
-  - text IN internalMonologue_Left_3lines: "I knew she'll make fun of my legs! She does that every time."
+  - text IN internalMonologue_Left_2lines: "I knew she'll make fun of my legs! She does that every time."
   - show rishi: normal_schooldress WITH CUT
   - natasha says laughing_schooldress: "And look at your chest! It's a jungle out there."
   - show natasha: normal_schooldress WITH CUT
@@ -96,7 +96,7 @@ sceneOne:
   - show jolly: normal_schooldress WITH CUT FLIP
   - jolly says neutral_schooldress: Are you alright?
   - rishi says sad_schooldress: "Yes... I'm okay!"
-  - jolly says: Come on, dude! Don't pay too much heed to that spoiled brat!
+  - jolly says pretentious_schooldress: Come on, dude! Don't pay too much heed to that spoiled brat!
   - rishi says normal_schooldress: Yeah.
   - jolly says normal_schooldress: Come on, let it go!
   - rishi says normal_schooldress: Hmmm.
@@ -106,16 +106,16 @@ sceneOne:
   - scene: sceneTwo
 sceneTwo:
   - show school_gate: WITH FADE
-  - show jolly: normal_schoolbag WITH FADE AT RIGHT
-  - show rishi: normal_schoolbag with FADE AT LEFT
-  - jolly says happy_schoolbag: So, I'll see you tomorrow then?
-  - rishi says sad_schoolbag: Yes.
-  - jolly says neutral_schoolbag: You're still thinking about what she said? Come on, I told you to forget it.
-  - rishi says sad_schoolbag: I will.
-  - jolly says normal_schoolbag: Just don't think about it too much, okay?
-  - rishi says neutral_schoolbag: Hmmm.
-  - jolly says neutral_schoolbag: Okay, see you then.
-  - rishi says normal_schoolbag: Bye.
+  - show jolly: normal_schooldress_schoolbag WITH FADE AT RIGHT
+  - show rishi: normal_schooldress_schoolbag with FADE AT LEFT
+  - jolly says happy_schooldress_schoolbag: So, I'll see you tomorrow then?
+  - rishi says sad_schooldress_schoolbag: Yes.
+  - jolly says neutral_schooldress_schoolbag: You're still thinking about what she said? Come on, I told you to forget it.
+  - rishi says normal_schooldress_schoolbag: I will.
+  - jolly says normal_schooldress_schoolbag: Just don't think about it too much, okay?
+  - rishi says sad_schooldress_schoolbag: Hmmm.
+  - jolly says neutral_schooldress_schoolbag: Okay, see you then.
+  - rishi says normal_schooldress_schoolbag: Bye.
   - hide jolly: WITH CUT
   - hide rishi: WITH CUT
   - hide school_gate: WITH FADE
@@ -126,7 +126,7 @@ sceneThree:
   - animate tap_gesture:
     spritesheet: loop LOOPED
   - wait: click
-  - text IN captionBoxSmall: Rishi’s Apartment Building
+  - text IN captionBoxSmall: "{TextInputName_rishi}'s Apartment Building"
   - hide tap_gesture:
   - scene: sceneFour
 sceneFour:
@@ -143,13 +143,13 @@ sceneFour:
   - text IN internalMonologue_OffcenterLeft: How will I change all this?
   - choice:
     - "Just accept how you look, flaws and everything.":
-      - show rishi: thinking_payjama WITH CUT
+      - show rishi: normal_payjama_thinking WITH CUT
       - text IN internalMonologue_OffcenterLeft_2lines:  I shouldn't think like that. I should accept how I look.
-      - text IN internalMonologue_OffcenterLeft_2lines:  But how am I going to handle all the trash talk I'llhave to face?
+      - text IN internalMonologue_OffcenterLeft_2lines:  But how am I going to handle all the trash talk I'll have to face?
       - show rishi: neutral_payjama WITH CUT
       - text IN internalMonologue_OffcenterLeft_2lines: No, I will do something about it. I can't just accept people making fun of me.
     - "Agree With Natasha":
-      - show rishi: thinking_payjama WITH CUT
+      - show rishi: normal_payjama_thinking WITH CUT
       - text IN internalMonologue_OffcenterLeft: Natasha's right. I'll always be a loser.
       - text IN internalMonologue_OffcenterLeft_2lines: How am I going to handle all the trash talk I'll have to face?
       - show rishi: neutral_payjama WITH CUT
@@ -157,82 +157,81 @@ sceneFour:
     - "Decide to do something about your appearance.":
       - show rishi: neutral_payjama WITH CUT
       - text IN internalMonologue_OffcenterLeft_2lines: No, I will do something about it. I can't just accept people making fun of me.
-  - show mom: normal AT OUTRIGHT WITH CUT
-  - show mom: normal AT OFFCENTER-RIGHT WITH MOVE
+  - show mom: normal_casual AT OUTRIGHT WITH CUT
+  - show mom: normal_casual AT OFFCENTER-RIGHT WITH MOVE
   - show rishi: normal_payjama WITH CUT
   - wait: 700
-  - mom says curious: I've been calling you for dinner for the past ten minutes. Why didn’t you answer?
+  - mom says curious_casual: I've been calling you for dinner for the past ten minutes. Why didn’t you answer?
   - rishi says sad_payjama_saying: Sorry, mom. Didn't hear you.
   - show rishi: sad_payjama WITH CUT
-  - mom says thoughtful: What happened, beta? Is something bothering you?
+  - mom says thoughtful_casual: What happened, beta? Is something bothering you?
   - rishi says sad_payjama: It's just… It’s okay. You won't understand.
-  - mom says smirks: Hey, you're forgetting. I was also your age once.
+  - mom says smirk_casual: Hey, you're forgetting. I was also your age once.
   - rishi says surprised_payjama: How did you know it was related to my age?
   - show rishi: normal_payjama WITH CUT
   - wait: 600
-  - mom says smirks: Hey, who's the mom here, huh?
-  - mom says sarcastic: Now, will you tell me what's eating you up?
-  - show mom: smirks WITH CUT
+  - mom says smirk_casual: Hey, who's the mom here, huh?
+  - mom says sarcastic_casual: Now, will you tell me what's eating you up?
+  - show mom: smirk_casual WITH CUT
   - rishi says sad_payjama_saying: It's this girl at school, Natasha. She's really mean.
   - show rishi: sad_payjama WITH CUT
   - wait: 800
-  - mom says curious: What did she do?
+  - mom says curious_casual: What did she do?
   - rishi says fearful_payjama_saying: She made fun of my pimples.
   - show rishi: fearful_payjama WITH CUT
-  - mom says normal: And that's bothering you? Don't worry, beta. Pimples are common in this age.
+  - mom says normal_casual: And that's bothering you? Don't worry, beta. Pimples are common in this age.
   - rishi says sad_payjama_saying: Then how come others don't get them?
   - show rishi: sad_payjama WITH CUT
   - wait: 800
-  - mom says neutral: It's not true. Everyone gets them.
+  - mom says neutral_casual: It's not true. Everyone gets them.
   - rishi says fearful_payjama: Did you?
-  - mom says normal: Of course. My face was always full of it. You can ask your nani.
+  - mom says normal_casual: Of course. My face was always full of it. You can ask your nani.
   - rishi says surprised_payjama: Whoa! You've got such great skin and you're saying you had pimples?
-  - mom says neutral: That's the point I'm trying to make. It will go away when your hormones calm down.
-  - mom says smirks: And if anyone makes fun of you because of that, ignore them. If they become too mean, you can just tell them that it’ll be their turn soon!
+  - mom says neutral_casual: That's the point I'm trying to make. It will go away when your hormones calm down.
+  - mom says smirk_casual: And if anyone makes fun of you because of that, ignore them. If they become too mean, you can just tell them that it’ll be their turn soon!
   - rishi says sad_payjama: But Natasha also…
   - wait: 1000
-  - mom says shocked: Natasha also what?
+  - mom says shocked_casual: Natasha also what?
   - rishi says fearful_payjama: She also made fun of my chest hair/flat chest. She said it’s a jungle out there/it's flatter than a LED TV.
-  - mom says thoughtful: This Natasha girl sounds really mean.
+  - mom says thoughtful_casual: This Natasha girl sounds really mean.
   - rishi says normal_payjama: Yes, mom. She is. What should I do?
-  - mom says neutral: Don't bother yourself with all this. All these changes are happening due to puberty. Everyone goes through this. Some go through it early, some late. But everyone does.
-  - mom says neutral: It makes changes to your body. By the time it's through with you, you'll be alright, beta!
+  - mom says neutral_casual: Don't bother yourself with all this. All these changes are happening due to puberty. Everyone goes through this. Some go through it early, some late. But everyone does.
+  - mom says neutral_casual: It makes changes to your body. By the time it's through with you, you'll be alright, beta!
   - rishi says fearful_payjama_saying: Really? I'll be alright?
-  - mom says happy: Oh you'll be more than alright. Don't forget how your mother looks!
+  - mom says happy_casual: Oh you'll be more than alright. Don't forget how your mother looks!
   - rishi says happy_payjama: Haha.
-  - mom says thoughtful: Are you feeling alright now?
+  - mom says thoughtful_casual: Are you feeling alright now?
   - choice:
     - "I think so.":
       - show rishi: surprised_payjama WITH CUT
       - text IN internalMonologue_OffcenterLeft_2lines: Whoa! It's a lot to process. But I’ve heard that word (bold)"puberty"(end) before somewhere.
       - text IN internalMonologue_OffcenterLeft: Maybe I should look it up online.
-      - mom says normal: Now, let's go eat dinner. Your sister and father are waiting for us.
+      - mom says normal_casual: Now, let's go eat dinner. Your sister and father are waiting for us.
       - rishi says normal_payjama: Okay, mom.
-      - show rishi: thinking_payjama WITH CUT
+      - show rishi: normal_payjama_thinking WITH CUT
       - text IN internalMonologue_OffcenterLeft:  I'll look that up after dinner then.
     - "Maybe, a litte.":
       - show rishi: surprised_payjama WITH CUT
       - text IN internalMonologue_OffcenterLeft_2lines: Whoa! It's a lot to process. But I’ve heard that word (bold)"puberty"(end) before somewhere.
       - text IN internalMonologue_OffcenterLeft: Maybe I should look it up online.
-      - mom says normal: Now, let's go eat dinner. Your sister and father are waiting for us.
+      - mom says normal_casual: Now, let's go eat dinner. Your sister and father are waiting for us.
       - rishi says normal_payjama: Okay, mom.
-      - show rishi: thinking_payjama WITH CUT
+      - show rishi: normal_payjama_thinking WITH CUT
       - text IN internalMonologue_OffcenterLeft:  I'll look that up after dinner then.
     - " I don't know, mom. It's very difficult to ignore such comments.":
-      - mom says happy: Don't worry, beta. You'll get over her comments. Don't forget there are more people who care about you than those who make fun of you.
+      - mom says happy_casual: Don't worry, beta. You'll get over her comments. Don't forget there are more people who care about you than those who make fun of you.
       - rishi says happy_payjama: Thanks, mom. I'll keep that in mind.
       - show rishi: surprised_payjama WITH CUT
       - text IN internalMonologue_OffcenterLeft_2lines: Whoa! It's a lot to process. But I’ve heard that word (bold)"puberty"(end) before somewhere.
       - text IN internalMonologue_OffcenterLeft: Maybe I should look it up online.
-      - mom says normal: Now, let's go eat dinner. Your sister and father are waiting for us.
+      - mom says normal_casual: Now, let's go eat dinner. Your sister and father are waiting for us.
       - rishi says normal_payjama: Okay, mom.
-      - show rishi: thinking_payjama WITH CUT
+      - show rishi: normal_payjama_thinking WITH CUT
       - text IN internalMonologue_OffcenterLeft:  I'll look that up after dinner then.
   - hide rishi: WITH CUT
   - hide mom: WITH CUT
   - hide rishi_bedroom_evening: WITH FADE
   - scene: sceneFive
-
 sceneFive:
   - show table_clock_9_30: WITH FADE
   - show tap_gesture: AT 960,157 WITH FADE
@@ -242,7 +241,7 @@ sceneFive:
   - hide tap_gesture:
   - show rishi_bedroom_night: WITH FADE
   - show tap_gesture: AT 960,157 WITH FADE
-  - show rishi: thinking_payjama AT LEFT WITH FADE
+  - show rishi: normal_payjama_thinking AT LEFT WITH FADE
   - animate tap_gesture:
     spritesheet: loop LOOPED
   - wait: click
@@ -297,7 +296,7 @@ sceneSix:
   - text IN internalMonologue_Left_2lines: Ohkay. That's strange! The video really contradicts the e-book!
   - show rishi: fearful_payjama WITH CUT
   - text IN internalMonologue_Left_2lines: " I'm so confused! \n Which one to believe?"
-  - show rishi: thinking_payjama WITH CUT
+  - show rishi: normal_payjama_thinking WITH CUT
   - text IN internalMonologue_Left_2lines: Wait a minute! The e-book had a 5-star rating but the video just has 10 likes.
   - hide phone_video_end: WITH FADE
   - choice:
@@ -312,13 +311,13 @@ sceneSix:
   - show rishi: happy_payjama WITH CUT
   - text IN internalMonologue_Left_2lines: Wow, this looks like a medical journal! So much info on puberty! I'm going to read this.
   - text IN internalMonologue_Left_2lines: It says that teenagers having long legs is a sign of them growing up. That’s reassuring.
-  - show rishi: thinking_payjama WITH CUT
+  - show rishi: normal_payjama_thinking WITH CUT
   - text IN internalMonologue_Left: Now, let's check the other one.
   - hide screen_good_design: WITH CUT
   - show screen_bad_design: AT 1245,750 WITH FADE
   - show rishi: happy_payjama WITH CUT
   - text IN internalMonologue_Left_3lines: Wow, this is also full of information. Although the design can use a bit of improvement, it’s worth checking out I guess!
-  - show rishi: thinking_payjama WITH CUT
+  - show rishi: normal_payjama_thinking WITH CUT
   - text IN internalMonologue_Left_2lines: Hmm. It says having long legs might be a sign of some disorder in teenagers!
   - show rishi: fearful_payjama WITH CUT
   - text IN internalMonologue_Left_2lines: Again contradicting information! I'm so confused! Which one to believe?
@@ -328,14 +327,14 @@ sceneSix:
       - show rishi: normal_payjama WITH CUT
       - text IN internalMonologue_Left_2lines: Yeah, the first website's got to be right. It's a medical journal for god's sake.
     - "Believe the second one.":
-      - show rishi: thinking_payjama WITH CUT
+      - show rishi: normal_payjama_thinking WITH CUT
       - text IN internalMonologue_Left_2lines: "There's no reason \n the second one can't be right."
     - "Believe none of the two.":
-      - show rishi: thinking_payjama WITH CUT
+      - show rishi: normal_payjama_thinking WITH CUT
       - text IN internalMonologue_Left_2lines: Hmm. It’s difficult to believe anything these websites are saying. Such contradictory information!
   - show rishi: annoyed_payjama WITH CUT
   - text IN internalMonologue_Left_2lines:  "Ah. It’s late. \n I think I should go to sleep now."
-  - show rishi: thinking_payjama WITH CUT
+  - show rishi: normal_payjama_thinking WITH CUT
   - text IN internalMonologue_Left_2lines:  "I learned a few things about puberty today but what if Natasha makes fun of me again tomorrow?"
   - choice:
     - "“I’ll make fun of her too”.":
@@ -362,7 +361,7 @@ sceneSeven:
   - hide tap_gesture:
   - jolly says happy_schooldress: Wow, you seem to be in a good mood, huh dude?
   - rishi says happy_schooldress: Well, you're spot on with that assumption.
-  - jolly says: Well, I'm just glad that you've moved on from yesterday's incident.
+  - jolly says neutral_schooldress: Well, I'm just glad that you've moved on from yesterday's incident.
   - rishi says normal_schooldress_saying: Yeah, I was really sad but then my mom explained to me about puberty and then I looked it up online.
   - show rishi: normal_schooldress WITH CUT
   - jolly says happy_schooldress: Whoa! What did you find out?
