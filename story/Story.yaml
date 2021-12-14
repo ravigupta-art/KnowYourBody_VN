@@ -1,15 +1,34 @@
 start:
-  - show school_gate: WITH FADE CONTINUE
+  - show school_gate: WITH FADE
   - show tap_gesture: AT 960,157 WITH FADE
   - animate tap_gesture:
     spritesheet: loop LOOPED
   - wait: click
-  - text IN captionBoxSmall: Outside School Premises
   - hide tap_gesture:
-  - scene: sceneOne
-sceneOne:
-  - show school_corridor: WITH FADETOBG CONTINUE
+  - text IN captionBoxLarge: You will now begin playing this gamified story. And you yourself are the protagonist/lead character in this story.
+  - text IN captionBoxLarge: From time to time, there would be situations where you have to make a choice.
+  - text IN captionBoxLarge: Your choices will determine how the story moves forward. So choose wisely!
+  - text IN captionBoxLarge: The choices will also decide how the story ends! So, do play till the very end!
+  - text IN captionBoxLarge: "Are you ready to decide your own destiny??!! \n Let’s get started then…"
+  - text IN captionBoxSmall: Outside School Premises
+  - scene: sceneZero
+sceneZero:
+  - show school_corridor: WITH FADE
   - wait: 100
+  - show GenderChoicePromtMessage: AT 960,186 WITH FADE CONTINUE
+  - visualchoice:
+    - choose_rishika AT 697,540:
+      - var gender_choice: rishika
+    - choose_rishi AT 1226,540:
+      - var gender_choice: rishi
+  - if ({gender_choice}=="rishika"):
+    - hide GenderChoicePromtMessage:
+    - scene: sceneOneRishika
+  - else:
+    - hide GenderChoicePromtMessage:
+    - scene: sceneOne
+############################## BOY VERSION STARTS HERE ###################################
+sceneOne:
   - text IN captionBoxMedium: "Enter your name to continue:"
   - call TextInput: name rishi Rishi
   - show rishi: normal_schooldress AT OUTLEFT WITH FADE
@@ -126,7 +145,7 @@ sceneThree:
   - animate tap_gesture:
     spritesheet: loop LOOPED
   - wait: click
-  - text IN captionBoxSmall: "{TextInputName_rishi}'s Apartment Building"
+  - text IN captionBoxMedium: "{TextInputName_rishi}'s Apartment Building"
   - hide tap_gesture:
   - scene: sceneFour
 sceneFour:
@@ -373,3 +392,373 @@ sceneSeven:
   - jolly says happy_schooldress: Not at all! But I'm happy that you've forgotten your long face at home!
   - rishi says happy_schooldress: Hahaha. That's a good one!
   - hide ALL: WITH FADE
+  - scene: endScene
+################################ GIRL VERSION STARTS HERE #############################################
+sceneOneRishika:
+  - text IN captionBoxMedium: "Enter your name to continue:"
+  - call TextInput: name rishika Rishika
+  - show rishika: normal_schooldress AT OUTLEFT WITH FADE
+  - show preeti: normal_schooldress AT OUTRIGHT WITH FADE
+  - wait: 100
+  - show rishika: normal_schooldress AT LEFT WITH MOVE
+  - show preeti: normal_schooldress AT OFFCENTER-RIGHT WITH MOVE
+  - wait: 800
+  - rishika says normal_schooldress_saying: I'm so glad school has reopened. Was getting bored to death.
+  - show rishika: normal_schooldress WITH CUT
+  - preeti says normal_schooldress: Looks like you didn't enjoy your vacations.
+  - rishika says normal_schooldress_saying: I did… Well, to some extent, but after a point, it was like the walls of my room were closing down.
+  - show rishika: normal_schooldress WITH CUT
+  - preeti says wickedsmile_schooldress: Well, what do you expect? It's your room; it's bound to behave weirdly.
+  - rishika says sarcastic_schooldress: Hahaha. When will you learn to crack some quality jokes?
+  - wait: 100
+  - show rishika: normal_schooldress WITH CUT
+  - preeti says pretentious_schooldress: What are you saying, girl? I crack quality jokes all the time.
+  - wait: 50
+  - show preeti: normal_schooldress WITH CUT
+  - rishika says sarcastic_schooldress: If you say so.
+  - wait: 200
+  - show rishika: normal_schooldress WITH CUT
+  - show preeti: normal_schooldress AT CENTER WITH MOVE
+  - show natasha: normal_schooldress AT OUTRIGHT WITH CUT
+  - show natasha: normal_schooldress AT RIGHT WITH MOVE
+  - natasha says laughing_schooldress: Hey losers, what are you guys doing back at school? Lost your way?
+  - wait: 200
+  - show natasha: normal_schooldress WITH CUT
+  - show rishika: normal_schooldress_thinking WITH CUT
+  - text IN internalMonologue_Left_4lines: "Oh no! \n Natasha is the last person I wanted to bump into today. How do I avoid her now?"
+  - show rishika: normal_schooldress WITH CUT
+  - choice:
+    - "Say 'Hi' to Natasha!":
+      - rishika says normal_schooldress_saying: Hi Natasha! How was the summer break?
+      - wait: 200
+      - show rishika: normal_schooldress WITH CUT
+      - natasha says attitude_schooldress: Do I look like I'm interested in making small talk with you? No, I don't have time for pimple faces like yours.
+      - wait: 200
+      - show natasha: normal_schooldress WITH CUT
+      - show preeti: annoyed_schooldress WITH CUT FLIP
+      - preeti says annoyed_schooldress: Hey! Don't call her that. Why are you being so mean to her?
+      - natasha says happy_schooldress: Because she’s a sore sight for my eyes!
+      - natasha says giggles_schooldress: And also because it's a nice pastime making fun of this loser!
+    - "Make an excuse and leave.":
+      - rishika says normal_schooldress_saying: Go away Natasha. We have a class to attend.
+      - show rishika: normal_schooldress WITH CUT
+      - natasha says angry_schooldress: Don't you dare try an escape! You can't leave here until I allow you to, pimple-face!
+      - show preeti: annoyed_schooldress WITH CUT FLIP
+      - preeti says annoyed_schooldress: Hey! Don't call her that. Why are you teasing her?
+      - natasha says happy_schooldress: Because she’s a sore sight for my eyes!
+      - natasha says giggles_schooldress: And also because it's a nice pastime making fun of this loser!
+    - "Take a stand.":
+      - rishika says angry_schooldress: I’m not a loser! Don't call us that!
+      - show rishika: normal_schooldress WITH CUT
+      - natasha says frowns_schooldress: Whoa! The loser has learned to talk back. I see. Maybe it's time to teach you a lesson, pimple-face!
+      - show preeti: annoyed_schooldress WITH CUT FLIP
+      - preeti says annoyed_schooldress: Hey! Don't call her that. Why are you teasing her?
+      - natasha says happy_schooldress: Because she’s a sore sight for my eyes!
+      - natasha says giggles_schooldress: And also because it's a nice pastime making fun of this loser!
+  - show preeti: normal_schooldress WITH CUT
+  - show natasha: normal_schooldress WITH CUT
+  - show rishika: normal_schooldress_thinking WITH CUT
+  - text IN internalMonologue_Left: "This is so upsetting. I hate her."
+  - show rishika: normal_schooldress WITH CUT
+  - natasha says attitude_schooldress: "So, Ms Loser, what are you going to do with those ridiculously long legs?"
+  - show natasha: normal_schooldress WITH CUT
+  - show rishika: sad_schooldress WITH CUT
+  - text IN internalMonologue_Left_2lines: "I knew she'll make fun of my legs! She does that every time."
+  - show rishika: normal_schooldress WITH CUT
+  - natasha says laughing_schooldress: "And look at your chest! it's flatter than my LED TV."
+  - show natasha: normal_schooldress WITH CUT
+  - show rishika: fearful_schooldress WITH CUT
+  - text IN internalMonologue_Left_2lines: That's a new one! Why am I like this?
+  - show rishika: normal_schooldress WITH CUT
+  - natasha says laughing_schooldress: You are some creature, pimple-face. You make me wonder whether you're supposed to be a boy and somehow turned into a girl!
+  - show natasha: normal_schooldress WITH CUT
+  - preeti says angry_schooldress: That's enough! Stop being so damn mean to her. Leave us alone!
+  - natasha says laughing_schooldress: Yeah, yeah! My quota, for now, is done. Until next time, pimple-face!
+  - show preeti:  normal_schooldress WITH CUT
+  - show natasha: laughing_schooldress WITH CUT FLIP
+  - show natasha: laughing_schooldress AT OUTRIGHT WITH MOVE
+  - wait: 300
+  - show preeti: normal_schooldress WITH CUT FLIP
+  - preeti says neutral_schooldress: Are you alright?
+  - rishika says sad_schooldress: "Yes... I'm okay!"
+  - preeti says pretentious_schooldress: Come on, girl! Don't pay too much heed to that spoiled brat!
+  - rishika says normal_schooldress: Yeah.
+  - preeti says normal_schooldress: Come on, let it go!
+  - rishika says normal_schooldress: Hmmm.
+  - hide preeti: WITH CUT
+  - hide rishika: WITH CUT
+  - hide school_corridor: WITH FADE
+  - scene: sceneTwoRishika
+sceneTwoRishika:
+  - show school_gate: WITH FADE
+  - show preeti: normal_schooldress_schoolbag WITH FADE AT RIGHT
+  - show rishika: normal_schooldress_schoolbag with FADE AT LEFT
+  - preeti says happy_schooldress_schoolbag: So, I'll see you tomorrow then?
+  - rishika says sad_schooldress_schoolbag: Yes.
+  - preeti says neutral_schooldress_schoolbag: You're still thinking about what she said? Come on, I told you to forget it.
+  - rishika says normal_schooldress_schoolbag: I will.
+  - preeti says normal_schooldress_schoolbag: Just don't think about it too much, okay?
+  - rishika says sad_schooldress_schoolbag: Hmmm.
+  - preeti says neutral_schooldress_schoolbag: Okay, see you then.
+  - rishika says normal_schooldress_schoolbag: Bye.
+  - hide preeti: WITH CUT
+  - hide rishika: WITH CUT
+  - hide school_gate: WITH FADE
+  - scene: sceneThreeRishika
+sceneThreeRishika:
+  - show rishi_building_ext_evening: WITH FADE
+  - show tap_gesture: AT 960,157 WITH FADE
+  - animate tap_gesture:
+    spritesheet: loop LOOPED
+  - wait: click
+  - text IN captionBoxMedium: "{TextInputName_rishika}'s Apartment Building"
+  - hide tap_gesture:
+  - scene: sceneFourRishika
+sceneFourRishika:
+  - show rishi_bedroom_evening: WITH FADE
+  - show tap_gesture: AT 960,157 WITH FADE
+  - animate tap_gesture:
+    spritesheet: loop LOOPED
+  - wait: click
+  - hide tap_gesture:
+  - show rishika: sad_payjama AT OFFCENTER-LEFT WITH FADE
+  - text IN internalMonologue_OffcenterLeft: Why am I so ugly and weird?
+  - text IN internalMonologue_OffcenterLeft_3lines: My face is full of pimples, my legs are becoming like street poles, hair coming out of every wrong place; I am a mess.
+  - text IN internalMonologue_OffcenterLeft: I'll always be a laughing stock for people.
+  - text IN internalMonologue_OffcenterLeft: How will I change all this?
+  - choice:
+    - "Just accept how you look, flaws and everything.":
+      - show rishika: normal_payjama_thinking WITH CUT
+      - text IN internalMonologue_OffcenterLeft_2lines:  I shouldn't think like that. I should accept how I look.
+      - text IN internalMonologue_OffcenterLeft_2lines:  But how am I going to handle all the trash talk I'll have to face?
+      - show rishika: neutral_payjama WITH CUT
+      - text IN internalMonologue_OffcenterLeft_2lines: No, I will do something about it. I can't just accept people making fun of me.
+    - "Agree With Natasha":
+      - show rishika: normal_payjama_thinking WITH CUT
+      - text IN internalMonologue_OffcenterLeft: Natasha's right. I'll always be a loser.
+      - text IN internalMonologue_OffcenterLeft_2lines: How am I going to handle all the trash talk I'll have to face?
+      - show rishika: neutral_payjama WITH CUT
+      - text IN internalMonologue_OffcenterLeft_2lines: No, I will do something about it. I can't just accept people making fun of me.
+    - "Decide to do something about your appearance.":
+      - show rishika: neutral_payjama WITH CUT
+      - text IN internalMonologue_OffcenterLeft_2lines: No, I will do something about it. I can't just accept people making fun of me.
+  - show mom: normal_casual AT OUTRIGHT WITH CUT
+  - show mom: normal_casual AT OFFCENTER-RIGHT WITH MOVE
+  - show rishika: normal_payjama WITH CUT
+  - wait: 700
+  - mom says curious_casual: I've been calling you for dinner for the past ten minutes. Why didn’t you answer?
+  - rishika says sad_payjama_saying: Sorry, mom. Didn't hear you.
+  - show rishika: sad_payjama WITH CUT
+  - mom says thoughtful_casual: What happened, beta? Is something bothering you?
+  - rishika says sad_payjama: It's just… It’s okay. You won't understand.
+  - mom says smirk_casual: Hey, you're forgetting. I was also your age once.
+  - rishika says surprised_payjama: How did you know it was related to my age?
+  - show rishika: normal_payjama WITH CUT
+  - wait: 600
+  - mom says smirk_casual: Hey, who's the mom here, huh?
+  - mom says sarcastic_casual: Now, will you tell me what's eating you up?
+  - show mom: smirk_casual WITH CUT
+  - rishika says sad_payjama_saying: It's this girl at school, Natasha. She's really mean.
+  - show rishika: sad_payjama WITH CUT
+  - wait: 800
+  - mom says curious_casual: What did she do?
+  - rishika says fearful_payjama_saying: She made fun of my pimples.
+  - show rishika: fearful_payjama WITH CUT
+  - mom says normal_casual: And that's bothering you? Don't worry, beta. Pimples are common in this age.
+  - rishika says sad_payjama_saying: Then how come others don't get them?
+  - show rishika: sad_payjama WITH CUT
+  - wait: 800
+  - mom says neutral_casual: It's not true. Everyone gets them.
+  - rishika says fearful_payjama: Did you?
+  - mom says normal_casual: Of course. My face was always full of it. You can ask your nani.
+  - rishika says surprised_payjama: Whoa! You've got such great skin and you're saying you had pimples?
+  - mom says neutral_casual: That's the point I'm trying to make. It will go away when your hormones calm down.
+  - mom says smirk_casual: And if anyone makes fun of you because of that, ignore them. If they become too mean, you can just tell them that it’ll be their turn soon!
+  - rishika says sad_payjama: But Natasha also…
+  - wait: 1000
+  - mom says shocked_casual: Natasha also what?
+  - rishika says fearful_payjama: She also made fun of my flat chest. She said it's flatter than a LED TV.
+  - mom says thoughtful_casual: This Natasha girl sounds really mean.
+  - rishika says normal_payjama: Yes, mom. She is. What should I do?
+  - mom says neutral_casual: Don't bother yourself with all this. All these changes are happening due to puberty. Everyone goes through this. Some go through it early, some late. But everyone does.
+  - mom says neutral_casual: It makes changes to your body. By the time it's through with you, you'll be alright, beta!
+  - rishika says fearful_payjama_saying: Really? I'll be alright?
+  - mom says happy_casual: Oh you'll be more than alright. Don't forget how your mother looks!
+  - rishika says happy_payjama: Haha.
+  - mom says thoughtful_casual: Are you feeling alright now?
+  - choice:
+    - "I think so.":
+      - show rishika: surprised_payjama WITH CUT
+      - text IN internalMonologue_OffcenterLeft_2lines: Whoa! It's a lot to process. But I’ve heard that word (bold)"puberty"(end) before somewhere.
+      - text IN internalMonologue_OffcenterLeft: Maybe I should look it up online.
+      - mom says normal_casual: Now, let's go eat dinner. Your brother and father are waiting for us.
+      - rishika says normal_payjama: Okay, mom.
+      - show rishika: normal_payjama_thinking WITH CUT
+      - text IN internalMonologue_OffcenterLeft:  I'll look that up after dinner then.
+    - "Maybe, a litte.":
+      - show rishika: surprised_payjama WITH CUT
+      - text IN internalMonologue_OffcenterLeft_2lines: Whoa! It's a lot to process. But I’ve heard that word (bold)"puberty"(end) before somewhere.
+      - text IN internalMonologue_OffcenterLeft: Maybe I should look it up online.
+      - mom says normal_casual: Now, let's go eat dinner. Your brother and father are waiting for us.
+      - rishika says normal_payjama: Okay, mom.
+      - show rishika: normal_payjama_thinking WITH CUT
+      - text IN internalMonologue_OffcenterLeft:  I'll look that up after dinner then.
+    - " I don't know, mom. It's very difficult to ignore such comments.":
+      - mom says happy_casual: Don't worry, beta. You'll get over her comments. Don't forget there are more people who care about you than those who make fun of you.
+      - rishika says happy_payjama: Thanks, mom. I'll keep that in mind.
+      - show rishika: surprised_payjama WITH CUT
+      - text IN internalMonologue_OffcenterLeft_2lines: Whoa! It's a lot to process. But I’ve heard that word (bold)"puberty"(end) before somewhere.
+      - text IN internalMonologue_OffcenterLeft: Maybe I should look it up online.
+      - mom says normal_casual: Now, let's go eat dinner. Your brother and father are waiting for us.
+      - rishika says normal_payjama: Okay, mom.
+      - show rishika: normal_payjama_thinking WITH CUT
+      - text IN internalMonologue_OffcenterLeft:  I'll look that up after dinner then.
+  - hide rishika: WITH CUT
+  - hide mom: WITH CUT
+  - hide rishi_bedroom_evening: WITH FADE
+  - scene: sceneFiveRishika
+sceneFiveRishika:
+  - show table_clock_9_30: WITH FADE
+  - show tap_gesture: AT 960,157 WITH FADE
+  - animate tap_gesture:
+    spritesheet: loop LOOPED
+  - wait: click
+  - hide tap_gesture:
+  - show rishi_bedroom_night: WITH FADE
+  - show tap_gesture: AT 960,157 WITH FADE
+  - show rishika: normal_payjama_thinking AT LEFT WITH FADE
+  - animate tap_gesture:
+    spritesheet: loop LOOPED
+  - wait: click
+  - hide tap_gesture:
+  - text IN internalMonologue_Left_2lines: Okay, let's look up puberty on the internet. Let's see what I can find.
+  - show rishika: normal_payjama WITH CUT
+  - show phone_ebook: AT 1240,750 WITH FADE
+  - text IN internalMonologue_Left_2lines: Oh, an e-book. Looks interesting. Should I read it?
+  - choice:
+    - "Read it.":
+      - text IN internalMonologue_Left_2lines: Yes, I'll read it. Looks like this book will give me a lot of clarity.
+      - hide phone_ebook: WITH CUT
+    - "Ignore it.":
+      - text IN internalMonologue_Left: No, it'll take too long to read the book.
+      - text IN internalMonologue_Left_2lines: But what if it has some valuable info. Something that I can use against Natasha.
+      - show rishika: annoyed_payjama WITH CUT
+      - text IN internalMonologue_Left: Ughh! I'll have to read it after all.
+      - hide phone_ebook: WITH CUT
+    - " Maybe Just scroll through it.":
+      - text IN internalMonologue_Left_2lines: Hmm. Let's just scroll through the pages for now.
+      - hide phone_ebook: WITH CUT
+      - show phone_ebook_scroll: AT 1240,750 WITH FADE
+      - animate phone_ebook_scroll:
+        spritesheet: loop LOOPED
+      - show tap_gesture: AT 960,157 WITH FADE
+      - animate tap_gesture:
+        spritesheet: loop LOOPED
+      - wait: click
+      - hide tap_gesture:
+      - hide phone_ebook_scroll:
+      - text IN internalMonologue_Left_2lines: Wait a minute! Did I just notice something about breast growth?
+      - text IN internalMonologue_Left: Looks like I'll have to read it after all.
+  - hide rishika: WITH CUT
+  - show table_clock_10: WITH FADE
+  - show tap_gesture: AT 960,157 WITH FADE
+  - animate tap_gesture:
+    spritesheet: loop LOOPED
+  - wait: click
+  - hide tap_gesture:
+  - scene: sceneSixRishika
+sceneSixRishika:
+  - show rishi_bedroom_night: WITH FADE
+  - show rishika: surprised_payjama AT LEFT WITH FADE
+  - text IN internalMonologue_Left_2lines:  Wow what a powerhouse of knowledge on puberty! Thank god I read this book!
+  - show rishika: normal_payjama WITH CUT
+  - text IN internalMonologue_Left_2lines: So breast growth can happen at a later age as well if puberty hits late.
+  - text IN internalMonologue_Left: Let's see what else I can find.
+  - show phone_video_start: AT 1240,750 WITH FADE
+  - text IN internalMonologue_Left_2lines: "   Oh, a video. Seems interesting. \n Let's watch it."
+  - hide phone_video_start: WITH CUT
+  - show phone_video_end: AT 1240,750 WITH FADE
+  - text IN internalMonologue_Left_2lines: Ohkay. That's strange! The video really contradicts the e-book!
+  - show rishika: fearful_payjama WITH CUT
+  - text IN internalMonologue_Left_2lines: " I'm so confused! \n Which one to believe?"
+  - show rishika: normal_payjama_thinking WITH CUT
+  - text IN internalMonologue_Left_2lines: Wait a minute! The e-book had a 5-star rating but the video just has 10 likes.
+  - hide phone_video_end: WITH FADE
+  - choice:
+    - "Belive in video.":
+      - text IN internalMonologue_Left_2lines: "Yeah the video might have got fewer likes but it might be right!"
+    - "Believe the e-book.":
+      - text IN internalMonologue_Left_2lines: "Of course, the book's right! \n It's got a 5-star rating. What was I thinking?"
+    - "Stay sceptical of both.":
+      - text IN internalMonologue_Left_2lines: "Hmm. I can't trust either of them if \n they are so contradictory."
+  - text IN internalMonologue_Left_2lines: "Hmm. Let's see what else \n I can find on puberty!"
+  - show screen_good_design: AT 1245,750 WITH FADE
+  - show rishika: happy_payjama WITH CUT
+  - text IN internalMonologue_Left_2lines: Wow, this looks like a medical journal! So much info on puberty! I'm going to read this.
+  - text IN internalMonologue_Left_2lines: It says that teenagers having long legs is a sign of them growing up. That’s reassuring.
+  - show rishika: normal_payjama_thinking WITH CUT
+  - text IN internalMonologue_Left: Now, let's check the other one.
+  - hide screen_good_design: WITH CUT
+  - show screen_bad_design: AT 1245,750 WITH FADE
+  - show rishika: happy_payjama WITH CUT
+  - text IN internalMonologue_Left_3lines: Wow, this is also full of information. Although the design can use a bit of improvement, it’s worth checking out I guess!
+  - show rishika: normal_payjama_thinking WITH CUT
+  - text IN internalMonologue_Left_2lines: Hmm. It says having long legs might be a sign of some disorder in teenagers!
+  - show rishika: fearful_payjama WITH CUT
+  - text IN internalMonologue_Left_2lines: Again contradicting information! I'm so confused! Which one to believe?
+  - hide screen_bad_design: WITH CUT
+  - choice:
+    - "Believe the first website.":
+      - show rishika: normal_payjama WITH CUT
+      - text IN internalMonologue_Left_2lines: Yeah, the first website's got to be right. It's a medical journal for god's sake.
+    - "Believe the second one.":
+      - show rishika: normal_payjama_thinking WITH CUT
+      - text IN internalMonologue_Left_2lines: "There's no reason \n the second one can't be right."
+    - "Believe none of the two.":
+      - show rishika: normal_payjama_thinking WITH CUT
+      - text IN internalMonologue_Left_2lines: Hmm. It’s difficult to believe anything these websites are saying. Such contradictory information!
+  - show rishika: annoyed_payjama WITH CUT
+  - text IN internalMonologue_Left_2lines:  "Ah. It’s late. \n I think I should go to sleep now."
+  - show rishika: normal_payjama_thinking WITH CUT
+  - text IN internalMonologue_Left_2lines:  "I learned a few things about puberty today but what if Natasha makes fun of me again tomorrow?"
+  - choice:
+    - "“I’ll make fun of her too”.":
+      - text IN internalMonologue_ExtremeLeft_2lines:  I’ll find something about her that she’s uncomfortable with and make fun of it. Yeah, that should shut her up. Haha.
+    - "“I’ll avoid her so that she can’t find me”.":
+      - text IN internalMonologue_ExtremeLeft_2lines:  No! That can’t happen. I’ll avoid her the whole day so that she can’t find me.
+    - "“I’ll tell her that it’s a natural process”.":
+      - text IN internalMonologue_Left_2lines: I will tell her what Maa told me. It’s a natural process and soon it will be her turn.
+  - show rishika: annoyed_payjama WITH CUT
+  - text IN internalMonologue_Left_2lines:  Anyway, I will think about it later. Need to sleep now.
+  - hide rishika: WITH CUT
+  - scene: sceneSevenRishika
+sceneSevenRishika:
+  - show school_gate: WITH FADE
+  - text IN captionBoxSmall: "The Next Morning..."
+  - show school_corridor: WITH FADE
+  - wait: 100
+  - show rishika: normal_schooldress AT LEFT WITH FADE
+  - show preeti: normal_schooldress AT RIGHT WITH FADE
+  - show tap_gesture: AT 960,157 WITH FADE
+  - animate tap_gesture:
+    spritesheet: loop LOOPED
+  - wait: click
+  - hide tap_gesture:
+  - preeti says happy_schooldress: Wow, you seem to be in a good mood, huh girl?
+  - rishika says happy_schooldress: Well, you're spot on with that assumption.
+  - preeti says neutral_schooldress: Well, I'm just glad that you've moved on from yesterday's incident.
+  - rishika says normal_schooldress_saying: Yeah, I was really sad but then my mom explained to me about puberty and then I looked it up online.
+  - show rishika: normal_schooldress WITH CUT
+  - preeti says happy_schooldress: Whoa! What did you find out?
+  - show preeti: normal_schooldress WITH CUT
+  - rishika says normal_schooldress: A lot of information. But the main point is this - if it is puberty, then everyone will go through the problems and the changes that I am going through.
+  - rishika says happy_schooldress:  So, why bother about them?
+  - rishika says happy_schooldress_saying: Did you get it?
+  - show rishika: normal_schooldress WITH CUT
+  - preeti says happy_schooldress: Not at all! But I'm happy that you've forgotten your long face at home!
+  - rishika says happy_schooldress: Hahaha. That's a good one!
+  - hide ALL: WITH FADE
+  - scene: endScene
+########################################################################################################
+endScene:
+  - text IN endBoxSmall: THE END.

@@ -523,6 +523,23 @@ config:
           align: left
           wordWrap: true
           wordWrapWidth: '920'
+    - id: endBoxSmall
+      type: messageBox
+      asset: asset20
+      x: '647'
+      'y': '500'
+      sfx: none
+      text:
+        x: 220
+        'y': 36
+        lineSpacing: 0
+        style:
+          font: Inter-Regular
+          fontSize: 36px
+          fill: '#FFFFFF'
+          align: left
+          wordWrap: true
+          wordWrapWidth: '521'
     - id: default
       type: nameBox
       asset: asset2

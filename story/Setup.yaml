@@ -146,6 +146,7 @@ characters:
       normal_payjama: assets/characters/rishika/rishika_normal_payjama.png
       normal_payjama_thinking: assets/characters/rishika/rishika_normal_payjama_thinking.png
       normal_schooldress: assets/characters/rishika/rishika_normal_schooldress.png
+      normal_schooldress_saying: assets/characters/rishika/rishika_neutral_schooldress_saying.png
       normal_schooldress_schoolbag: assets/characters/rishika/rishika_normal_schooldress_schoolbag.png
       normal_schooldress_thinking: assets/characters/rishika/rishika_normal_schooldress_thinking.png
       sad_payjama: assets/characters/rishika/rishika_sad_payjama.png
@@ -159,6 +160,9 @@ characters:
       surprised_schooldress: assets/characters/rishika/rishika_surprised_schooldress.png
       surprised_schooldress_schoolbag: assets/characters/rishika/rishika_surprised_schooldress_schoolbag.png
 cgs:
+  GenderChoicePromtMessage: assets/objects/GenderChoicePromtMessage.png
+  choose_rishi: assets/objects/RishiPortrait.png
+  choose_rishika: assets/objects/RishikaPortrait.png
   phone_ebook: assets/objects/phone_ebook.png
   phone_ebook_scroll:
     spritesheet: assets/objects/phone_ebook_scroll.png 320 645
@@ -190,25 +194,51 @@ lazyloading:
   loadingScreen: true
   backgroundLoading: true
   episodes:
-    - [start, sceneOne]
-    - [sceneTwo, sceneThree, sceneFour]
-    - [sceneFive, sceneSix]
-    - [sceneSeven]
+    - [start, sceneZero]
+    - [sceneOne, sceneOneRishika]
+    - [sceneTwo, sceneTwoRishika]
+    - [sceneThree, sceneThreeRishika]
+    - [sceneFour, sceneFourRishika]
+    - [sceneFive, sceneFiveRishika]
+    - [sceneSix, sceneSixRishika]
+    - [sceneSeven, sceneSevenRishika]
+    - [endScene]
   assetsPerScene:
     start:
       school_gate: backgrounds
+      school_corridor: backgrounds
       tap_gesture: cgs
       confirmBtn: spritesheets
+    sceneZero:
+      school_corridor: backgrounds
+      school_gate: backgrounds
+      GenderChoicePromtMessage: cgs
+      choose_rishi: cgs
+      choose_rishika: cgs
     sceneOne:
       school_corridor: backgrounds
+      school_gate: backgrounds
       rishi: characters
       jolly: characters
+      natasha: characters
+    sceneOneRishika:
+      school_corridor: backgrounds
+      school_gate: backgrounds
+      rishika: characters
+      preeti: characters
       natasha: characters
     sceneTwo:
       school_gate: backgrounds
       jolly: characters
       rishi: characters
+    sceneTwoRishika:
+      school_gate: backgrounds
+      preeti: characters
+      rishika: characters
     sceneThree:
+      rishi_building_ext_evening: backgrounds
+      tap_gesture: cgs
+    sceneThreeRishika:
       rishi_building_ext_evening: backgrounds
       tap_gesture: cgs
     sceneFour:
@@ -216,11 +246,24 @@ lazyloading:
       tap_gesture: cgs
       rishi: characters
       mom: characters
+    sceneFourRishika:
+      rishi_bedroom_evening: backgrounds
+      tap_gesture: cgs
+      rishika: characters
+      mom: characters
     sceneFive:
       table_clock_9_30: backgrounds
       tap_gesture: cgs
       rishi_bedroom_night: backgrounds
       rishi: characters
+      phone_ebook: cgs
+      phone_ebook_scroll: cgs
+      table_clock_10: backgrounds
+    sceneFiveRishika:
+      table_clock_9_30: backgrounds
+      tap_gesture: cgs
+      rishi_bedroom_night: backgrounds
+      rishika: characters
       phone_ebook: cgs
       phone_ebook_scroll: cgs
       table_clock_10: backgrounds
@@ -231,9 +274,22 @@ lazyloading:
       phone_video_end: cgs
       screen_good_design: cgs
       screen_bad_design: cgs
+    sceneSixRishika:
+      rishi_bedroom_night: backgrounds
+      rishika: characters
+      phone_video_start: cgs
+      phone_video_end: cgs
+      screen_good_design: cgs
+      screen_bad_design: cgs
     sceneSeven:
       school_gate: backgrounds
       school_corridor: backgrounds
       rishi: characters
       jolly: characters
+      tap_gesture: cgs
+    sceneSevenRishika:
+      school_gate: backgrounds
+      school_corridor: backgrounds
+      rishika: characters
+      preeti: characters
       tap_gesture: cgs
